@@ -1,0 +1,165 @@
+/* JT Event Calendar - Event's Page CSS */
+
+.jt-event-calendar article {
+    margin: 50px 0;
+}
+
+.jt-event-calendar article .container {
+    padding: 0;
+}
+
+.jt-event-calendar article .event-title {
+    font-size: 22px;
+}
+
+.jt-event-calendar article .event-short-info {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.jt-event-calendar article i {
+    width: 20px;
+}
+
+.jt-event-calendar article .time {
+    float: right;
+}
+
+.jt-event-calendar article .event-datetime {
+	background: #fefefe;
+	border: 1px solid #f6f6f6;
+	padding: 8px 12px;
+	color: #ff748f;
+	font-size: 13px;
+}
+
+.jt-event-calendar article .event-location {
+    padding: 5px 12px;
+    font-style: italic;
+    color: #999;
+    font-size: 13px;
+}
+
+.jt-event-calendar article .event-info {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 20px 5px;
+}
+
+.jt-event-calendar article .row {
+    margin: 0;
+}
+
+.jt-event-calendar article .col-md-4 {
+    padding: 0 20px 0 0;
+}
+
+.jt-event-calendar article .col-md-4 img {
+    margin: 0 0 20px;
+}
+
+.jt-event-calendar article .col-md-4 iframe {
+	width: 100%;
+}
+
+.jt-event-calendar article .col-md-8 {
+    padding: 0 25px 20px;
+	background: #fff;
+	border: 1px solid #f8f8f8;
+}
+
+.jt-event-calendar article .event-tickets h3,
+.jt-event-calendar article .event-video h3 {
+    padding: 8px 12px;
+    margin: 10px 0 20px;
+    font-size: 16px;
+    background: #fefefe;
+    border: 1px solid #f6f6f6;
+}
+
+.jt-event-calendar article .event-video {
+    margin: 30px 0 0;
+}
+
+.jt-event-calendar article .event-video iframe {
+    width: 100%;
+}
+
+.jt-event-calendar article video::-webkit-media-controls {
+    overflow: hidden !important
+}
+
+.jt-event-calendar video::-webkit-media-controls-enclosure {
+    width: calc(100% + 32px);
+    margin-left: auto;
+}
+
+.jt-event-calendar article .event-gallery {
+    margin: -15px 0 20px
+}
+.jt-event-calendar article .event-gallery a {
+    padding: 2px;
+    display: inline-block;
+}
+
+.jt-event-calendar article .event-gallery img {
+    opacity: 0.7;
+    width: 77.9px;
+    height: 60px;
+    margin: 0 0 6px;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar article .event-gallery img:hover {
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar article .more-btn {
+    float: right;
+}
+
+.jt-event-calendar article .more-btn a {
+    display: block;
+    background: #484848;
+    padding: 4px 14px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 12px;
+    font-style: normal;
+    margin: -3px -5px 0 0;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar article .more-btn a:hover {
+    background: #ff748f;
+    transition: all .4s ease;
+}
+
+@media (max-width: 767px) {
+    .jt-event-calendar article .row > * {
+        padding: 0 0 20px;
+    }
+    .jt-event-calendar article .col-md-8 {
+        padding: 15px;
+    }
+    .jt-event-calendar article .time {
+        float: none;
+        display: block;
+        padding-top: 10px;
+    }
+    .jt-event-calendar article .event-video video,
+    .jt-event-calendar article .event-video iframe {
+        width: 100%;
+    }
+	.jt-event-calendar article .more-btn {
+		float: none;
+		display: block;
+		padding: 20px 0 0;
+		text-align: center;
+	}
+	.jt-event-calendar article .more-btn a {
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+}

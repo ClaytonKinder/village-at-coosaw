@@ -1,0 +1,1133 @@
+/* Default */
+
+.jt-event-calendar-default {
+    background: #ff748f;
+	margin: 0 !important;
+	transition: all .4s ease;
+}
+
+.jt-event-calendar-default:nth-child(2n) {
+    margin: 15px 0 !important;
+}
+
+.jt-event-calendar-default > * {
+    padding: 0 !important;
+}
+
+.jt-event-calendar-default:hover {
+	background: #ff748f;
+	transition: all .4s ease;
+}
+
+.jt-event-calendar-default .image {
+    background: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.jt-event-calendar-default img {
+    height: 92px;
+    width: 100%;
+	object-fit: cover;
+}
+
+.jt-event-calendar-default > *:nth-child(2) {
+	position: relative;
+    background: #f8f8f8;
+	padding: 10px 20px 10px 0 !important;
+	border-radius: 0 0 0 100px;
+}
+
+.jt-event-calendar-default > *:nth-child(2):before {
+	position: absolute;
+	content: '';
+	border-top: 12px solid transparent;
+	border-left: 12px solid #f8f8f8;
+	border-bottom: 12px solid transparent;
+	right: -12px;
+	top: 38%;
+}
+
+.jt-event-calendar-default > *:nth-child(2) p {
+	margin: 0;
+}
+
+.jt-event-calendar-default .info {
+	font-size: 12px;
+	color: rgba(24, 24, 24, 0.7);
+	margin-bottom: 5px !important;
+}
+
+.jt-event-calendar-default .duration {
+	font-size: 14px;
+	color: #ff748f;
+}
+
+.jt-event-calendar-default .separator {
+	font-size: 14px;
+	padding: 0 8px 0 6px;
+}
+
+.jt-event-calendar-default .title {
+	font-size: 18px;
+}
+
+.jt-event-calendar-default .short-info {
+	font-size: 13px;
+	color: #727272;
+	margin: 4px 0 0 0 !important;
+}
+
+.jt-event-calendar-default .info i {
+	font-size: 13px;
+	padding-left: 5px;
+}
+
+.jt-event-calendar-default .event-btn {
+    text-align: center;
+    padding: 36px 0 36px 12px;
+    font-size: 13px;
+}
+
+.jt-event-calendar-default .event-btn a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 0;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar-default:hover {
+	background: #444648;
+	transition: all .4s ease;
+}
+
+/* Default 2 */
+
+.jt-event-calendar-default-2 {
+    background: #fdfdfd;
+    border: 1px solid #f9f9f9;
+    margin: 0 0 12px !important;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar-default-2 > * {
+    padding: 0 !important;
+}
+
+.jt-event-calendar-default-2 > *:nth-child(2),
+.jt-event-calendar-default-2 > *:nth-child(3) {
+    padding: 20px !important;
+}
+
+.jt-event-calendar-default-2 .image {
+    background: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.jt-event-calendar-default-2 img {
+    height: 92px;
+    width: 100%;
+	object-fit: cover;
+}
+
+.jt-event-calendar-default-2 .info {
+	font-size: 12px;
+	color: rgba(24, 24, 24, 0.7);
+	margin-bottom: 5px !important;
+}
+
+.jt-event-calendar-default-2 .duration {
+	font-size: 14px;
+	color: #ff748f;
+}
+
+.jt-event-calendar-default-2 .separator {
+	font-size: 14px;
+	padding: 0 8px 0 6px;
+}
+
+.jt-event-calendar-default-2 .title {
+	font-size: 16px;
+}
+
+.jt-event-calendar-default-2 .short-info {
+	font-size: 13px;
+	color: #727272;
+	margin: 4px 0 0 0 !important;
+}
+
+.jt-event-calendar-default-2 .info i {
+	font-size: 13px;
+	padding-left: 5px;
+}
+
+.jt-event-calendar-default-2 .event-location {
+	display: block;
+	margin-top: 10px;
+}
+
+.jt-event-calendar-default-2 .event-btn {
+    padding: 38px 0 0;
+    font-size: 13px;
+}
+
+.jt-event-calendar-default-2 .event-btn a {
+	background: #ff748f;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	transition: all .4s ease;
+}
+
+.jt-event-calendar-default-2 .event-btn a:hover {
+	background: #484848;
+	transition: all .4s ease;
+}
+
+
+/* Transparent Background */
+
+.jt-event-calendar-transparent {
+    background: transparent;
+	margin: 0 !important;
+	transition: all .4s ease;
+}
+
+.jt-event-calendar-transparent:nth-child(2n) {
+    margin: 20px 0 !important;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+}
+
+.jt-event-calendar-transparent > * {
+    padding: 0 !important;
+}
+
+.jt-event-calendar-transparent .image {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.jt-event-calendar-transparent img {
+    height: 92px;
+    width: 92px;
+    border-radius: 50px;
+	object-fit: cover;
+}
+
+.jt-event-calendar-transparent > *:nth-child(2) {
+	position: relative;
+	padding: 20px !important;
+}
+
+.jt-event-calendar-transparent > *:nth-child(2) p {
+	margin: 0;
+}
+
+.jt-event-calendar-transparent .info {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 5px !important;
+}
+
+.jt-event-calendar-transparent .duration {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.jt-event-calendar-transparent .separator {
+	font-size: 14px;
+	padding: 0 8px 0 6px;
+}
+
+.jt-event-calendar-transparent .title {
+	font-size: 18px;
+	color: #fff;
+}
+
+.jt-event-calendar-transparent .short-info {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.7);
+	margin: 4px 0 0 0 !important;
+}
+
+.jt-event-calendar-transparent .info i {
+	font-size: 13px;
+	padding-left: 5px;
+}
+
+.jt-event-calendar-transparent .event-btn {
+    text-align: right;
+    padding: 45px 0;
+    font-size: 13px;
+}
+
+.jt-event-calendar-transparent .event-btn a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 0;
+    transition: all .4s ease;
+}
+
+
+/* Grid */
+
+.jt-event-calendar-grid {
+	margin: 0 !important;
+}
+
+.jt-event-calendar-grid > * {
+    padding: 0 6px 12px !important;
+}
+
+.jt-event-calendar-grid .image {
+    background: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.jt-event-calendar-grid img {
+    height: 190px;
+    width: 100%;
+	object-fit: cover;
+}
+
+.jt-event-calendar-grid .info {
+	background: #f9f9f9;
+	font-size: 12px;
+	color: rgba(24, 24, 24, 0.7);
+	margin-bottom: 0 !important;
+	padding: 10px 15px;
+}
+
+.jt-event-calendar-grid .duration {
+	font-size: 14px;
+	color: #ff748f;
+}
+
+.jt-event-calendar-grid .separator {
+	font-size: 14px;
+	padding: 0 8px 0 6px;
+}
+
+.jt-event-calendar-grid .title {
+	background: #fefefe;
+	font-size: 15px;
+	padding: 10px 15px;
+	margin: 0 !important;
+	border-left: 1px solid #f9f9f9;
+	border-right: 1px solid #f9f9f9;
+	border-bottom: 1px solid #f9f9f9;
+}
+
+.jt-event-calendar-grid .short-info {
+	background: #fefefe;
+	font-size: 13px;
+	color: #727272;
+	margin: 0 !important;
+	padding: 10px 15px 20px!important;
+	border-left: 1px solid #f9f9f9;
+	border-right: 1px solid #f9f9f9;
+}
+
+.jt-event-calendar-grid .info i {
+	font-size: 13px;
+	padding-left: 5px;
+}
+
+.jt-event-calendar-grid .event-btn {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 13px;
+	background: #ff748f;
+}
+
+.jt-event-calendar-grid .event-btn a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 0;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar-grid .event-btn:hover {
+	background: #444648;
+	transition: all .4s ease;
+}
+
+
+/* Grid - Overlay Text */
+
+.jt-event-calendar-overlay {
+	margin: 0 !important;
+}
+
+.jt-event-calendar-overlay > * {
+    padding: 0 6px 12px !important;
+}
+
+.jt-event-calendar-overlay figure,
+.jt-event-calendar-overlay img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.jt-event-calendar-overlay figcaption {
+	margin: 10px;
+	background: rgba(255, 255, 255, 0.9);
+	color: #484848;
+	padding: 15px;
+}
+
+.jt-event-calendar-overlay .info {
+    background: #ff748f;
+    text-align: center;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.jt-event-calendar-overlay .separator {
+    padding: 0 8px;
+}
+
+.jt-event-calendar-overlay .info i {
+    padding: 0 0 0 5px;
+}
+
+.jt-event-calendar-overlay .title {
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.jt-event-calendar-overlay .short-info {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+    border-left: 0;
+}
+
+.jt-event-calendar-overlay .event-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.jt-event-calendar-overlay .event-btn a {
+    background: #484848;
+    border: 1px solid #484848;
+    padding: 8px 20px;
+    color: #fff !important;
+    transition: all .4s ease;
+    border-radius: 1px;
+}
+
+.jt-event-calendar-overlay .event-btn a:hover {
+    background: transparent;
+    color: #484848 !important;
+    transition: all .4s ease;
+}
+
+
+/* Grid - Overlay Text Hover */
+
+.jt-event-calendar-overlay-hover {
+	margin: 0 !important;
+}
+
+.jt-event-calendar-overlay-hover > * {
+    padding: 0 6px 12px !important;
+}
+
+.jt-event-calendar-overlay-hover figure,
+.jt-event-calendar-overlay-hover img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.jt-event-calendar-overlay-hover figcaption {
+	margin: 10px;
+	background: rgba(255, 255, 255, 0.9);
+	color: #484848;
+	padding: 15px;
+}
+
+.jt-event-calendar-overlay-hover .info {
+    background: #ff748f;
+    text-align: center;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.jt-event-calendar-overlay-hover .separator {
+    padding: 0 8px;
+}
+
+.jt-event-calendar-overlay-hover .info i {
+    padding: 0 0 0 5px;
+}
+
+.jt-event-calendar-overlay-hover .title {
+    text-align: center;
+    font-size: 16px;
+    visibility: visible;
+    margin: 20px 0;
+    color: inherit;
+}
+
+.jt-event-calendar-overlay-hover .short-info {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+    border-left: 0;
+}
+
+.jt-event-calendar-overlay-hover .event-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.jt-event-calendar-overlay-hover figcaption p,
+.jt-event-calendar-overlay-hover figcaption a {
+    visibility: hidden;
+    height: 0;
+    transition: height .6s ease, visibility .3s ease;
+}
+
+.jt-event-calendar-overlay-hover figure:hover figcaption p,
+.jt-event-calendar-overlay-hover figure:hover figcaption a {
+    visibility: visible;
+    height: 30px;
+    transition: all .5s ease;
+}
+
+.jt-event-calendar-overlay-hover figure:hover figcaption .short-info {
+    height: 70px;
+}
+
+
+.jt-event-calendar-overlay-hover .event-btn a {
+    background: transparent;
+    padding: 8px 20px;
+    color: transparent !important;
+    transition: all .4s ease;
+    border-radius: 1px;
+}
+
+.jt-event-calendar-overlay-hover figure:hover .event-btn a {
+	background: #484848;
+	border: 1px solid #484848;
+	color: #fff !important;
+}
+
+.jt-event-calendar-overlay-hover .event-btn a:hover {
+    background: transparent;
+    color: #484848 !important;
+    border: 1px solid #484848;
+    transition: all .4s ease;
+}
+
+
+/* Slideset 2 */
+.jt-event-calendar-slideset-2 ul {
+    margin: 0;
+}
+
+.jt-event-calendar-slideset-2 li {
+    padding: 0 6px;
+}
+
+.jt-event-calendar-slideset-2 img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.jt-event-calendar-slideset-2 .title {
+    font-size: 16px;
+    background: #f9f9f9;
+    padding: 10px;
+    margin: -10px 0 10px;
+}
+
+.jt-event-calendar-slideset-2 .info {
+    font-size: 13px;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.jt-event-calendar-slideset-2 .location {
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.jt-event-calendar-slideset-2 i {
+    padding-left: 10px;
+    width: 20px;
+}
+
+.jt-event-calendar-slideset-2 .event-btn a {
+    background: #ff748f;
+    padding: 6px 12px;
+    margin-top: 10px;
+    display: inline-block;
+    color: #fff;
+}
+
+
+/* Small List */
+
+.jt-event-calendar-small-list {
+    background: #fdfdfd;
+    border: 1px solid #f9f9f9;
+    margin: 0 0 12px !important;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar-small-list > * {
+    padding: 0 !important;
+}
+
+.jt-event-calendar-small-list > *:nth-child(2) {
+    padding: 6px 20px 0 !important;
+    background: #fff;
+}
+
+.jt-event-calendar-small-list .image {
+    background: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.jt-event-calendar-small-list img {
+    height: 92px;
+    width: 100%;
+	object-fit: cover;
+}
+
+.jt-event-calendar-small-list .info {
+	font-size: 12px;
+	color: rgba(24, 24, 24, 0.7);
+	margin-bottom: 0 !important;
+	margin-top: 6px !important;
+	border-top: 1px solid #f0f0f0;
+	padding-top: 8px;
+}
+
+.jt-event-calendar-small-list .duration {
+	font-size: 12px;
+	color: #ff748f;
+}
+
+.jt-event-calendar-small-list .separator {
+	font-size: 14px;
+	padding: 0 8px 0 6px;
+}
+
+.jt-event-calendar-small-list .title {
+	font-size: 16px;
+}
+
+.jt-event-calendar-small-list .short-info {
+	font-size: 13px;
+	color: #727272;
+	margin: 0 !important;
+	padding: 12px;
+}
+
+.jt-event-calendar-small-list .info i {
+	font-size: 12px;
+	padding-left: 5px;
+}
+
+.jt-event-calendar-small-list .event-location {
+	display: block;
+	margin-top: 6px;
+}
+
+.jt-event-calendar-small-list .event-btn {
+    padding: 0;
+    font-size: 13px;
+}
+
+.jt-event-calendar-small-list .event-btn a {
+	background: #ff748f;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	transition: all .4s ease;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.jt-event-calendar-small-list .event-btn a:hover {
+	background: #484848;
+	transition: all .4s ease;
+}
+
+
+/* Small List 2 */
+
+.jt-event-calendar-small-list-2 {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    margin: 0 0 12px !important;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar-small-list-2 > * {
+    padding: 0 !important;
+}
+
+.jt-event-calendar-small-list-2 > *:nth-child(2) {
+    padding: 6px 20px 0 !important;
+    background: #fff;
+}
+
+.jt-event-calendar-small-list-2 .image {
+    background: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.jt-event-calendar-small-list-2 img {
+    height: 95px;
+    width: 100%;
+	object-fit: cover;
+}
+
+.jt-event-calendar-small-list-2 .info {
+	font-size: 12px;
+	color: rgba(24, 24, 24, 0.7);
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+	background: #fdfdfd;
+	border-top: 1px solid #f0f0f0;
+	padding: 8px;
+}
+
+.jt-event-calendar-small-list-2 .duration {
+	font-size: 12px;
+	color: #ff748f;
+}
+
+.jt-event-calendar-small-list-2 .separator {
+	font-size: 14px;
+	padding: 0 8px 0 6px;
+}
+
+.jt-event-calendar-small-list-2 .title {
+	font-size: 16px;
+	margin: 0;
+}
+
+.jt-event-calendar-small-list-2 .short-info {
+	font-size: 12px;
+	color: #727272;
+	margin: 0 !important;
+	padding: 5px 0 0;
+}
+
+.jt-event-calendar-small-list-2 .info i {
+	font-size: 12px;
+	padding-left: 5px;
+}
+
+.jt-event-calendar-small-list-2 .event-location {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.jt-event-calendar-small-list-2 .link-title {
+	color: #484848 !important;
+}
+
+
+
+/* Small List 3 */
+
+.jt-event-calendar-small-list-3,
+.jt-event-calendar-small-list-3 .uk-grid {
+	margin: 0 !important;
+}
+
+.jt-event-calendar-small-list-3 > * {
+    padding: 0 6px 12px !important;
+}
+
+.jt-event-calendar-small-list-3 figure,
+.jt-event-calendar-small-list-3 img {
+	width: 100%;
+	height: 140px;
+	object-fit: cover;
+}
+
+.jt-event-calendar-small-list-3 figcaption {
+	margin: 0;
+	background: rgba(255, 255, 255, 0.9);
+	color: #484848;
+	padding: 15px;
+}
+
+.jt-event-calendar-small-list-3 .info {
+    background: #ff748f;
+    text-align: center;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 12px;
+    width: 60px;
+    float: right;
+}
+
+.jt-event-calendar-small-list-3 .separator {
+    padding: 0 8px;
+}
+
+.jt-event-calendar-small-list-3 .info i {
+    padding: 5px;
+    display: block;
+    font-size: 20px;
+}
+
+.jt-event-calendar-small-list-3 .event-basic-info {
+	padding: 0;
+	margin: 0 20px 0 0 !important;
+    float: right;
+}
+
+.jt-event-calendar-small-list-3 .title {
+    text-align: right;
+    font-size: 16px;
+}
+
+.jt-event-calendar-small-list-3 .short-info {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+    /* border: 1px solid #e5e5e5; */
+    border-right: 0;
+    border-left: 0;
+    display: none;
+}
+
+.jt-event-calendar-small-list-3 .duration {
+    margin: 5px 10px;
+    display: block;
+}
+
+.jt-event-calendar-small-list-3 .event-location {
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.jt-event-calendar-small-list-3 .event-location i {
+	padding-left: 5px;
+}
+
+.jt-event-calendar-small-list-3 .event-btn {
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+}
+
+.jt-event-calendar-small-list-3 .event-btn a {
+    background: #484848;
+    border: 1px solid #484848;
+    padding: 8px 20px;
+    color: #fff !important;
+    transition: all .4s ease;
+    border-radius: 1px;
+    font-size: 13px;
+}
+
+.jt-event-calendar-small-list-3 .event-btn a:hover {
+    background: transparent;
+    color: #484848 !important;
+    transition: all .4s ease;
+}
+
+
+/* Small List 4 */
+.jt-event-calendar-small-list-4 {
+    margin: 0 !important;
+}
+
+.jt-event-calendar-small-list-4 .uk-width-1-1 {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 !important;
+	margin-bottom: 10px;
+}
+
+.jt-event-calendar-small-list-4 .uk-width-1-1:last-child {
+	border: 0;
+	margin: 0;
+}
+
+.jt-event-calendar-small-list-4 .title {
+    font-size: 15px;
+}
+
+.jt-event-calendar-small-list-4 .title i {
+    padding-left: 8px;
+}
+
+.jt-event-calendar-small-list-4 .info, 
+.jt-event-calendar-small-list-4 .event-location {
+    font-size: 12px;
+    color: #737373;
+    margin: 0;
+}
+
+.jt-event-calendar-small-list-4 .info i, 
+.jt-event-calendar-small-list-4 .event-location i {
+    width: 20px;
+}
+
+.jt-event-calendar-small-list-4 .event-btn {
+    margin: 10px 0;
+}
+
+.jt-event-calendar-small-list-4 .event-btn a {
+    display: inline-block;
+    background: rgb(255, 116, 143);
+    border: 1px solid transparent;
+    padding: 5px 12px;
+	font-size: 12px;
+    color: #fff;
+	transition: all .4s ease;
+}
+
+.jt-event-calendar-small-list-4 .event-btn a:hover {
+	background: transparent;
+	color: rgb(255, 116, 143);
+	border: 1px solid rgb(255, 116, 143);
+	transition: all .4s ease;
+}
+
+
+/* Small List 5 */
+
+.jt-event-calendar-small-list-5,
+.jt-event-calendar-small-list-5 .uk-grid {
+	margin: 0 !important;
+}
+
+.jt-event-calendar-small-list-5 > * {
+    padding: 0 6px 12px !important;
+}
+
+.jt-event-calendar-small-list-5 figure,
+.jt-event-calendar-small-list-5 img {
+	width: 100%;
+	height: 140px;
+	object-fit: cover;
+}
+
+.jt-event-calendar-small-list-5 figcaption {
+	margin: 8px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+}
+
+.jt-event-calendar-small-list-5 .info {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+}
+
+.jt-event-calendar-small-list-5 .separator {
+    padding: 0 8px;
+}
+
+.jt-event-calendar-small-list-5 .info i {
+    padding: 0 0 0 5px;
+}
+
+.jt-event-calendar-small-list-5 .event-basic-info {
+	padding: 0;
+	margin: 0 10px 0 0 !important;
+	float: right;
+}
+
+.jt-event-calendar-small-list-5 .title {
+    text-align: right;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.jt-event-calendar-small-list-5 .short-info {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+    border-right: 0;
+    border-left: 0;
+    display: none;
+}
+
+.jt-event-calendar-small-list-5 .event-location {
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.jt-event-calendar-small-list-5 .event-location i {
+	padding-left: 5px;
+}
+
+.jt-event-calendar-small-list-5 .event-btn {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+}
+
+.jt-event-calendar-small-list-5 .event-btn a {
+    background: rgb(255, 116, 143);
+    padding: 8px 20px;
+    color: #fff !important;
+    transition: all .4s ease;
+    font-size: 13px;
+}
+
+
+
+/* Slideset - Overlay Text */
+
+.jt-event-calendar-overlay-slideset .uk-grid {
+	margin: 0 !important;
+}
+
+.jt-event-calendar-overlay-slideset .uk-grid > * {
+    padding: 0 6px 12px !important;
+}
+
+.jt-event-calendar-overlay-slideset figure,
+.jt-event-calendar-overlay-slideset img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.jt-event-calendar-overlay-slideset figcaption {
+	margin: 10px;
+	background: rgba(45, 45, 45, 0.6);
+	color: #fff;
+	padding: 15px;
+}
+
+.jt-event-calendar-overlay-slideset figcaption div {
+    width: 100%;
+}
+
+.jt-event-calendar-overlay-slideset .info {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+}
+
+.jt-event-calendar-overlay-slideset .info i {
+    padding: 0 0 0 5px;
+}
+
+.jt-event-calendar-overlay-slideset .location {
+	font-size: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 0 6px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.jt-event-calendar-overlay-slideset .location i {
+    padding-left: 8px;
+}
+
+.jt-event-calendar-overlay-slideset .title {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.jt-event-calendar-overlay-slideset .event-btn a {
+	display: inline-block;
+	background: #ff748f;
+	padding: 5px 8px;
+	font-size: 12px;
+	color: #fff !important;
+	transition: all .4s ease;
+	border-radius: 1px;
+}
+
+.jt-event-calendar-overlay-slideset .event-btn a:hover {
+    background: rgba(255, 255, 255, 0.95);
+    color: #ff748f !important;
+    transition: all .4s ease;
+}
+
+.jt-event-calendar-overlay-slideset .uk-slidenav {
+    color: #fff !important;
+}
+
+
+
+@media (max-width: 767px) {
+	.jt-event-calendar-default > *,
+	.jt-event-calendar-default-2 > *,
+	.jt-event-calendar-grid > *,
+	.jt-event-calendar-overlay > *,
+	.jt-event-calendar-overlay-hover > * {
+		width: 100% !important;
+		border-radius: 0 !important;
+	}
+	.jt-event-calendar-default > *:before,
+	.jt-event-calendar-default-2 > *:before {
+		display: none;
+	}
+	.jt-event-calendar-default img,
+	.jt-event-calendar-default-2 img {
+		height: auto;
+	}
+	.jt-event-calendar-default .event-btn {
+		padding: 12px;
+	}
+	.jt-event-calendar-default-2 .event-btn {
+    	padding: 10px 20px 30px;
+	}
+	.jt-event-calendar-small-list-3 .info {
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+	.jt-event-calendar-small-list-3 .info i {
+		display: inline-block;
+		font-size: 12px;
+		padding: 0;
+	}
+	.jt-event-calendar-small-list-3 .info span {
+		display: inline-block;
+		margin: 10px 10px 0;
+	}
+	.jt-event-calendar-small-list-3 .event-btn {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		padding: 0;
+	}
+	.jt-event-calendar-small-list-3 .event-basic-info {
+		margin: 0 !important;
+		padding: 20px;
+		text-align: center;
+	}
+	.jt-event-calendar-small-list-3 figure, .jt-event-calendar-small-list-3 img {
+		height: 200px;
+	}
+}

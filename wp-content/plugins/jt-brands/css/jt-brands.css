@@ -1,0 +1,110 @@
+/* JT Brands CSS */
+
+.jt-brands .store-header {
+    margin: 30px 0;
+    background: #fff;
+    border: 1px solid #f5f5f5;
+}
+
+.jt-brands .store-header .col-md-4 {
+    padding: 0 10px 0 0;
+}
+
+.jt-brands .store-header .store-title {
+    font-size: 26px;
+    margin: 20px 0 10px;
+}
+
+.jt-brands .store-header .store-short-info {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #f5f5f5;
+    font-style: italic;
+}
+
+.jt-brands .store-header .store-basic-info span {
+    padding: 0 20px 0 0;
+}
+
+.jt-brands .store-header .store-basic-info span i {
+    padding: 0 10px 0 0;
+    color: #01a7cb;
+}
+
+.jt-brands .store-tabs {
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    padding: 30px;
+    margin: 0 0 30px;
+}
+
+.jt-brands .store-tabs .uk-tab li {
+    float: none;
+    display: inline-block;
+}
+
+.jt-brands .store-tabs .uk-tab {
+    text-align: center;
+}
+
+.jt-brands .store-gallery {
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    padding: 20px 20px 30px;
+    margin: 0 0 30px;
+}
+
+.jt-brands .store-gallery h3 {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-size: 20px;
+}
+
+.jt-brands .store-gallery .row {
+	margin: 0;
+}
+
+.jt-brands .store-gallery .row > * {
+    padding: 0 3px;
+	margin: 0 0 6px;
+}
+
+.jt-brands .store-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.jt-brands .store-tabs .uk-tab {
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.jt-brands .store-tabs .uk-tab li {
+    display: inline-block;
+    float: none;
+}
+
+.jt-brands .store-tabs .uk-tab li a {
+    color: #484848;
+    background: #fff;
+    border: 0;
+}
+
+.jt-brands .store-tabs .uk-tab li.uk-active a {
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.jt-brands .store-tabs .uk-tab li.uk-active a:after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: #01a7cb;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}

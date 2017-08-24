@@ -1,0 +1,1173 @@
+/* ------------------------------------------------------------------
+
+Blog Style RTL CSS - [Table of contents]
+
+1. Basic CSS
+2. Header
+3. Sidebar
+4. Showcase
+5. Pages
+6. Bottom
+7. Footer
+8. Page, Category and Post CSS
+9. Default WordPress Widgets
+10. Widgets
+11. Responsive Design
+
+-------------------------------------------------------------------*/
+
+
+
+/* 1. Basic CSS */
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+}
+
+a {
+    color: #b79b86;
+    text-decoration: none !Important;
+	transition: all .4s ease;
+}
+
+a:hover {
+    color: #403228;
+	transition: all .4s ease;
+}
+
+body {
+    background: rgba(245, 235, 226, 0.5);
+}
+
+.container {
+    background: #fff;
+    box-shadow: 0 0 3px #dad2cb;
+}
+
+.hidden-front {
+	display: block;
+}
+
+.front-widget {
+	display: none;
+}
+
+.home .front-widget {
+	display: block;
+}
+
+.hidden-front {
+	display: block;
+}
+
+.home .hidden-front {
+	display: none;
+}
+
+
+.widget-title {
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+	margin: 0 0 15px;
+}
+
+
+/* 2. Header */
+
+.menu-mobile {
+	display: none;
+}
+
+.site-header .row {
+    margin: 0;
+}
+
+#site-navigation a {
+    padding: 18px 0px 20px 25px;
+    font-size: 16px;
+}
+
+#site-navigation a:after {
+    content: '\002F';
+    padding-right: 18px;
+}
+
+#site-navigation li:last-child a:after {
+    display: none;
+}
+
+.site-header {
+    padding: 20px 0 !important;
+}
+
+.single-post .site-header,
+.archive .site-header,
+.single .site-header,
+.page .site-header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px !important;
+}
+
+.main-navigation li {
+    float: none;
+    display: inline-block;
+}
+
+.main-navigation .sub-menu {
+    background: #fff;
+    padding: 20px;
+    top: 50px;
+}
+
+.main-navigation .sub-menu li a {
+    padding: 8px 0 !important;
+    border-bottom: 1px dotted #ddd;
+    font-size: 14px !important;
+}
+
+.main-navigation .sub-menu li:last-child a {
+    border: 0;
+}
+
+.main-navigation .sub-menu li a:after {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#social {
+    padding-top: 18px;
+}
+
+#social a {
+    padding: 8px;
+    font-size: 15px;
+}
+
+
+/* 3. Sidebar */
+
+aside .widget-title {
+    font-size: 16px;
+    text-align: center;
+    border-top: 2px solid #2f2f2f;
+    border-bottom: 2px solid #2f2f2f;
+    padding: 11px 0 11px;
+}
+
+aside .about-us {
+    text-align: center;
+}
+
+aside .about-us img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+	padding-top: 18px;
+}
+
+aside .about-us p {
+    padding-top: 25px;
+    font-size: 14px;
+    color: #505050;
+}
+
+aside .about-us i {
+    padding: 10px;
+    color: #000;
+    transition: all .4s ease;
+}
+
+aside .about-us i:hover {
+	color: #b79b86;
+    transition: all .4s ease;
+}
+
+
+/* 4. Showcase */
+#showcase {
+    margin: 0 -15px;
+}
+
+
+/* 5. Pages */
+
+/* About Page */
+
+.about-page-1 .about-box-1 h2 {
+    text-align: center !Important;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.about-page-1 .about-box-1 p {
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: 400;
+    color: #676666;
+}
+
+.about-page-1 .about-box-2 {
+    padding-top: 85px;
+	text-align: center;
+}
+
+.about-page-1 .about-box-2 i {
+    color: #ffffff;
+    font-size: 33px;
+    border: 1px solid #b79b86;
+    border-radius: 50px;
+    padding: 12px;
+    width: 59px;
+    height: 59px;
+    background: #b79b86;
+    transition: all .3s ease;
+}
+
+.about-page-1 .about-box-2 i:hover {
+    border: 1px solid #b79b86;
+    background: transparent;
+    color: #b79b86;
+    transition: all .3s ease;
+}
+
+.about-page-1 .about-box-2 h2 {
+    font-size: 20px !important;
+    color: #b79b86;
+}
+
+.about-page-1 .about-box-2 p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* About Page 2 */
+
+.about-page-2 .about-box-1 h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+
+.about-page-2 .about-box-1 h3 {
+    font-size: 22px;
+    color: #cab5a5;
+    font-weight: 400;
+	padding-top: 25px;
+}
+.about-page-2 .about-box-1 span {
+    font-size: 24px;
+    color: #fff;
+    background: rgba(183, 155, 134, 0.46);
+    padding: 7px 9px 7px;
+    margin-left: 10px;
+}
+
+.about-page-2 .about-box-1 p {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.about-page-2 .about-box-1 .last-box {
+    background: #ded1c7;
+    margin-top: 44px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    padding: 30px 16px;
+}
+
+.about-page-2 .about-box-2 {
+    margin-top: 90px;
+    background: rgba(183, 155, 134, 0.47);
+    text-align: center;
+	padding: 0 0 0 20px;
+}
+
+.about-page-2 .about-box-2 .img-box {
+	padding: 0 0 0 20px;
+}
+
+.about-page-2 .about-box-2 .img-box img {
+	height: 210px;
+	object-fit: cover;
+}
+
+.about-page-2 .about-box-2 .job-box h3 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.about-page-2 .about-box-2 .job-box p {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 13px;
+}
+
+.about-page-2 .about-box-2 .job-box {
+    border: 1px solid #fff;
+    padding: 14px 22px;
+	margin:25px 0;
+}
+
+
+/* Our Writers */
+
+.writers-1 {
+    text-align: center;
+}
+
+.writers-1 h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.writers-1 h3 {
+    font-size: 19px;
+}
+
+.writers-1 p {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+
+/* Writers 2 */
+
+.writers-2 .row {
+	margin-bottom: 20px;
+}
+
+.writers-2 h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+	text-align: center;
+}
+
+.writers-2 img {
+	height: 253px;
+	width: 100%;
+}
+
+.writers-2 figure p {
+    margin: 0;
+}
+
+.writers-2 .uk-overlay-bottom {
+    padding: 21px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.82);
+    color: #000;
+    font-size: 20px;
+}
+
+.writers-2 .writers-2-info {
+    padding: 33px 28px;
+    background: #faf5f1;
+    text-align: center;
+    margin-right: -15px;
+}
+
+.writers-2 .writers-2-info p {
+    font-size: 15px;
+    padding-bottom: 9px;
+    color: #4a4a4a;
+}
+
+.writers-2 .writers-2-info h4 {
+    font-size: 15px;
+}
+
+.writers-2 .writers-2-info i {
+    font-size: 15px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 50px;
+    padding: 12px 0px;
+    margin: 9px;
+    width: 40px;
+    height: 40px;
+	transition: all .4s ease;
+}
+
+.writers-2 .writers-2-info i:hover {
+	background: #000;
+	color: #faf5f1;
+	transition: all .4s ease;
+}
+
+/* Writers 3 */
+
+.writers-3 h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+	text-align: center;
+}
+
+
+.writers-3 img {
+    height: 253px;
+    width: 100%;
+}
+
+.writers-3 figure p {
+    margin: 0;
+}
+
+.writers-3 .uk-overlay-bottom {
+    padding: 21px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.82);
+    color: #000;
+    font-size: 20px;
+}
+
+.writers-3 .writers-3-info {
+    padding-top: 45px;
+}
+
+.writers-3 .writers-3-info p {
+    font-size: 15px;
+    color: #505050;
+}
+
+.writers-3 .writers-3-info h4 {
+    font-size: 17px;
+}
+
+
+.writers-3 .writers-3-info span {
+    padding-right: 7px;
+}
+
+.writers-3 .writers-3-info i {
+    font-size: 15px !important;
+    border: 1px solid #b79b86;
+    border-radius: 50px;
+    color: #b79b86;
+    width: 25px;
+    height: 25px;
+    padding: 4px 5px;
+    text-align: center;
+    margin-top: 4px;
+    margin-left: 8px;
+    transition: all .4s ease;
+}
+
+.writers-3 .writers-3-info i:hover {
+	color: #000;
+	border: 1px solid #000;
+	transition: all .4s ease;
+}
+
+.writers-3 .writer-img {
+	padding: 0 !important;
+}
+
+/* Contact Form 1 */
+
+.contact {
+    padding-top: 45px;
+}
+
+.contact input[type="text"], 
+.contact input[type="email"],
+.contact textarea {
+    outline: none !important;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+	padding: 5px;
+    margin-top: 6px;
+}
+
+.contact textarea {
+	margin-top: 6px;
+}
+
+.contact label {
+    width: 95%;
+}
+
+.contact .wpcf7-submit {
+    font-size: 17px !Important;
+    padding: 10px 30px !Important;
+    box-shadow: none !important;
+    text-shadow: none !Important;
+    color: #fff !Important;
+    border: 1px solid #b79b86 !Important;
+    background: #b79b86 !Important;
+    border-radius: !Important 30px;
+	transition: all .4s ease;
+}
+
+.contact .wpcf7-submit:hover {
+	background: transparent !Important;
+	color: #b79b86 !Important;
+	transition: all .4s ease;
+}
+
+.contact .contact-info span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #655e59;
+}
+
+.contact .contact-info p {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #585858;
+    font-weight: 400;
+}
+
+/* Contact Form 2 */
+
+.contact-2 {
+    padding-bottom: 25px;
+}
+
+.contact-2 label {
+	width: 95%;
+}
+
+.contact-2 h3 {
+    text-align: center !important;
+    font-size: 22px;
+	padding-bottom: 10px;
+}
+
+.contact-2 .box-1 {
+    text-align: center;
+    background: rgba(183, 155, 134, 0.55);
+    color: #fff;
+    padding: 15px 10px;
+    border: 3px solid #fff;
+}
+
+.contact-2 .box-1 i {
+    font-size: 25px !important;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 12px 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.contact-2 .box-1 h4 {
+    font-size: 20px;
+}
+
+.contact-2 .box-1 p {
+    font-size: 14px;
+}
+
+.contact-2 .box-2 {
+    text-align: center;
+    background: rgba(183, 155, 134, 0.55);
+    color: #fff;
+    padding: 15px 10px;
+    border: 3px solid #fff;
+}
+
+.contact-2 .box-2 i {
+    font-size: 25px !important;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 12px 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.contact-2 .box-2 h4 {
+    font-size: 20px;
+}
+
+.contact-2 .box-2 p {
+    font-size: 14px;
+}
+
+.contact-2 .box-3 {
+    text-align: center;
+    background: rgba(183, 155, 134, 0.55);
+    color: #fff;
+    padding: 15px 10px;
+    border: 3px solid #fff;
+}
+
+.contact-2 .box-3 i {
+    font-size: 25px !important;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 12px 15px;
+    width: 52px;
+    height: 50px;
+}
+
+.contact-2 .box-3 h4 {
+    font-size: 20px;
+}
+
+.contact-2 .box-3 p {
+    font-size: 14px;
+}
+
+.contact-2 input[type="text"], 
+.contact-2 input[type="email"],
+.contact-2 textarea {
+    outline: none !important;
+}
+
+.contact-2 input[type="text"],
+.contact-2 input[type="email"] {
+	padding: 5px;
+    margin-top: 6px;
+}
+
+.contac-2t textarea {
+	margin-top: 6px;
+}
+
+.contact-2 .wpcf7-submit {
+    box-shadow: inset 0 0 0 0 #fff !Important;
+    text-shadow: none !important;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 1px solid #d7c8bd;
+    background: rgb(215, 200, 189);
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.contact-2 .wpcf7-submit:hover {
+    border: 1px solid #d7c8bd;
+    color: #d7c8bd;
+    background: transparent;
+    box-shadow: inset 0 150px 0 0 #fff !important;
+    transition: all .4s ease;
+}
+
+
+/* 6. Bottom */
+
+#bottom {
+    background: #fafafa;
+    padding: 40px 0 20px;
+    margin: 10px -15px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#bottom img {
+    border: 1px solid #f0f0f0;
+}
+
+
+/* 7. Footer */
+
+#footer {
+    background: #292522;
+    padding: 30px 10px 10px;
+    text-align: center;
+    margin: -10px -15px 0;
+}
+
+#footer h2 {
+    font-size: 22px;
+    color: #fdfdfd;
+    font-weight: 400;
+    border: none !Important;
+}
+
+#footer .footer-about p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    padding: 2px;
+	padding-top: 15px;
+}
+
+#footer .footer-about i {
+    font-size: 15px;
+    border: 1px solid #b69b87;
+    padding: 13px 14px;
+    width: 43px;
+    height: 43px;
+	margin: 17px 4px;
+	transition: all .3s ease;
+}
+
+#footer .footer-about i:hover {
+	color: #fff;
+	transition: all .3s ease;
+}
+
+#footer .headline-row {
+    border-bottom: none !Important;
+}
+
+#footer .headline-row a {
+    color: rgba(255, 255, 255, 0.63) !important;
+}
+
+#footer .headline-row .post-info {
+    color: rgba(182, 155, 135, 0.49) !important;
+}
+
+#wp-subscribe {
+    background: transparent !important;
+    margin-top: -37px !important;
+}
+
+#wp-subscribe h4.title {
+    display: none !important;
+}
+
+#wp-subscribe p.footer-text {
+    display: none !Important;
+}
+
+input.name-field {
+    outline: none !Important;
+    background: rgba(182, 155, 135, 0.3) !important;
+}
+
+input.email-field {
+    outline: none !Important;
+    background: rgba(182, 155, 135, 0.3) !important;
+}
+
+#wp-subscribe input.submit {
+    background: transparent !Important;
+	text-transform: none !Important;
+    box-shadow: none !Important;
+	text-shadow: none !Important;
+	color: #b79b86 !important;
+	border: 1px solid #b79b86 !Important;
+    font-size: 15px !IMPORTANT;
+}
+
+#copyright {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: right;
+    position: relative;
+    padding: 10px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#totop-btn {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+#totop-btn a {
+	color: #fff;
+}
+
+
+/* 8. Page Category and Post */
+.single .content-area, 
+.single aside,
+.archive .content-area,
+.archive aside,
+.page .content-area,
+.page aside {
+    padding-top: 20px;
+}
+
+.archive .page-header {
+    margin: 0;
+    padding: 0;
+}
+
+.archive .page-title {
+    margin: 0 0 20px;
+    font-size: 28px;
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px dotted #eee;
+}
+
+.archive article img {
+    vertical-align: middle;
+    height: 350px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+.archive .entry-meta {
+    text-align: center;
+    border: 0;
+    margin: 0;
+}
+
+.archive .entry-footer {
+    text-align: center;
+    border: 0;
+    margin: 0;
+    background: #f0f0f0;
+    border-radius: 0 0 20px 20px;
+}
+
+.archive .entry-content {
+	background: #f9f9f9;
+	padding: 20px;
+	margin: 0;
+	border-right: 1px solid #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+}
+
+.archive article span.tags-links {
+    display: none;
+}
+
+.archive .entry-header .entry-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* Default Post */
+article {
+	position: relative;
+	background: #fff;
+}
+
+article.sticky {
+    border: 3px double #1fb8e0;
+}
+
+article.sticky .entry-footer {
+    margin: 0;
+}
+
+.entry-title {
+    margin: 0 0 15px;
+    font-size: 22px;
+    padding: 15px 15px 0;
+}
+
+.single .entry-title {
+    text-align: right;
+    padding: 0;
+}
+
+.entry-title a {
+    color: #b79b86;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-title a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+.home .content-area {
+	margin: 0;
+}
+
+.entry-meta {
+    position: relative;
+    background: #fff;
+    padding: 0 0 20px;
+}
+
+.entry-meta a {
+    color: #b79b86;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-meta a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+.entry-content {
+    background: #fff;
+    padding: 20px 20px 0;
+    margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.entry-content p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 10px;
+}
+
+.entry-footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+}
+
+.entry-footer .cat-links, 
+.entry-footer .tags-links {
+    padding-left: 15px;
+}
+
+.entry-footer .comments-link {
+    padding-left: 15px;
+}
+
+.entry-footer a {
+    color: #000;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-footer .edit-link a {
+    color: #b79b86;
+}
+
+.entry-footer a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.entry-footer .edit-link a:hover {
+    border-bottom: 1px solid #b79b86;
+}
+
+.single .entry-footer {
+    margin-bottom: 0 !important;
+}
+
+.post-navigation {
+    background: #fdfdfd;
+    padding: 10px 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.post-navigation a {
+    color: #585858;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.post-navigation a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+#respond {
+    position: relative;
+    margin-top: 40px;
+}
+
+.comment-form .logged-in-as {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+#respond input,
+#respond textarea {
+    padding: 10px;
+    color: #404040;
+    border: 1px solid #f0f0f0;
+    outline: none;
+	width: 100%;
+}
+
+#respond input[type="submit"] {
+	width: auto;
+    padding: 15px 20px;
+    font-size: 16px;
+    background: #b79b86;
+    box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    border: 1px solid #b79b86;
+    border-radius: 2px;
+    transition: all .4s ease;
+}
+
+#respond input[type="submit"]:hover {
+    background: #fff;
+    color: #b79b86;
+    transition: all .4s ease;
+}
+
+
+
+/* 9. Default Widgets */
+
+.search-form {
+    text-align: center;
+}
+
+input.search-field {
+    outline: none !Important;
+    font-size: 14px;
+    border: 1px solid #b79b86;
+    border-radius: 0 50px 50px 0;
+    padding: 6px 15px 6px 25px; 
+}
+
+input.search-submit {
+    font-size: 15px;
+    padding: 9px 21px 10px;
+    background: #b79b86;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    color: #fff;
+    border: none !important;
+    border-radius: 50px 0 0 50px;
+    margin-right: -4px;
+}
+
+.calendar_wrap {
+    border: 1px solid #f0f0f0;
+}
+
+.calendar_wrap caption {
+    background: #fafafa;
+    text-align: center;
+}
+
+.calendar_wrap thead {
+    background: #f0f0f0;
+}
+
+.calendar_wrap thead th {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.calendar_wrap td {
+    text-align: center;
+    padding: 8px;
+    background: #fefefe;
+}
+
+
+.calendar_wrap tfoot {
+    display: none;
+}
+
+.tagcloud a {
+    font-size: 12px !Important;
+    color: #b69b87;
+    border: 1px solid #b69b87;
+    background: transparent;
+    display: inline-block;
+    text-decoration: none !important;
+    padding: 0 16px;
+    line-height: 24px;
+    margin-left: 4px;
+    margin-bottom: 7px;
+    transition: all .4s ease;
+}
+
+.tagcloud a:hover {
+	color: #fff;
+	background: #b69b87;
+	transition: all .4s ease;
+}
+
+
+/* 10. Widgets */
+
+.more-link a {
+	color: #000 !Important;
+}
+
+.grid-small-image .category {
+	background: #b79b86 !important;
+}
+
+.grid-large-image .category {
+	background: #b79b86 !important;
+}
+
+.headline-row {
+    padding: 14px 20px !important;
+    background: transparent !important;
+    border-bottom: 1px solid rgba(183, 155, 134, 0.3) !important;
+}
+
+.headline-row a {
+    color: rgb(183, 155, 134) !important;
+}
+
+.headline-row .post-info {
+    color: rgb(72, 72, 72) !important;
+}
+.showcase-list-2 .category {
+    color: #2f2f2f !important;
+}
+
+.jt-event-calendar-small-list-3 .info {
+	background: #b79b86 !important;
+}
+
+.jt-event-calendar article {
+    background: transparent;
+    margin: -1px 0 0;
+}
+
+.jt-event-calendar {
+    padding: 0 !important;
+}
+
+
+
+/* 11. Responsive Design */
+
+@media (max-width: 767px) {
+	.site-header {
+		position: relative;
+	}
+	#social {
+		padding-top: 35px;
+		text-align: center;
+	}
+	.menu-mobile {
+		position: absolute;
+		display: block;
+		top: 30px;
+		font-size: 30px;
+		color: #5f5f5f;
+		left: 30px;
+		z-index: 100;
+	}
+	#mobile-menu .menu ul,
+	#mobile-menu .menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#mobile-menu .menu li {
+		padding: 15px 20px 8px;
+	}
+	#mobile-menu a {
+		color: #fff;
+	}
+	.comment-form .logged-in-as {
+    	position: relative;
+	}
+	input.search-submit {
+		padding: 9px 14px 10px;
+	}
+	.about-page-2 .about-box-2 .img-box {
+		padding: 0;
+	}
+	.about-page-2 .about-box-2 {
+		padding: 20px;
+	}
+	.writers-2 .writers-2-info {
+		margin: 0 15px;
+	}
+}

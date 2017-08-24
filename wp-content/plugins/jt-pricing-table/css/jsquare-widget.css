@@ -1,0 +1,50 @@
+.wrap-jsquare {
+    padding: 0 !important;
+    margin: -1px -15px 15px;
+}
+
+.wrap-jsquare input,
+.wrap-jsquare select {
+	border-radius: 50px;
+	margin-top: 6px;
+}
+
+.wrap-jsquare .uk-accordion {
+	background: #ebebeb;
+}
+
+.wrap-jsquare .uk-accordion-title {
+    background: #ebebeb;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    padding: 10px 16px !important;
+    margin: 0 -4px 0 0 !important;
+    border-radius: 2px;
+    text-align: left !important;
+    display: inline-block;
+    border-radius: 0 !important;
+}
+
+.wrap-jsquare .uk-accordion-title.uk-active {
+    background: #6db8e4;
+    color: #fff !important;
+    margin: 0;
+}
+
+.wrap-jsquare .uk-accordion-content {
+	background: #f9f9f9;
+	padding: 15px 15px 30px;
+}
+
+.wrap-jsquare label {
+    width: 100%;
+    padding: 4px 0 2px;
+}
+
+.wrap-jsquare span {
+    float: right;
+    font-size: 11px;
+    color: #797979;
+    font-style: italic;
+    padding: 1px 0 5px;
+}

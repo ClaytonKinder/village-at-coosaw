@@ -1,0 +1,41 @@
+.jt-program-default {
+	margin: 0 0 15px !important;
+}
+
+.jt-program-default > * {
+	padding-left: 0 !important;
+}
+
+.jt-program-default img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.jt-program-default > *:nth-child(2) {
+	padding: 10px 0 10px 10px !important;
+}
+
+.jt-program-default > *:nth-child(2) p {
+	margin: 0;
+}
+
+.jt-program-default .info {
+	font-size: 12px;
+	color: rgba(24, 24, 24, 0.7);
+	margin-bottom: 3px !important;
+}
+
+.jt-program-default .duration {
+	font-size: 15px;
+	color: #ff748f;
+}
+
+.jt-program-default .separator {
+	font-size: 14px;
+	padding: 0 6px 0 8px;
+}
+
+.jt-program-default .title {
+	font-size: 18px;
+}

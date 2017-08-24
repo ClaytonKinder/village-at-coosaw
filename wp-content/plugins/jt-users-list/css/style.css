@@ -1,0 +1,923 @@
+.jsquare-users-list {
+	position: relative;
+}
+
+.jsquare-users-list .uk-grid {
+	margin: 0 !important;
+}
+
+.jsquare-users-list .uk-grid > * {
+	padding: 0 8px !important;
+}
+
+.jsquare-users-list .uk-slidenav {
+    color: #fff;
+}
+
+.jsquare-users-list .uk-modal-dialog .uk-width-1-2 {
+	padding: 0 15px !important;
+}
+
+.jsquare-users-list .uk-modal-dialog .uk-width-1-2:first-child {
+	padding: 0 !important;
+}
+
+.jsquare-users-list-arrows {
+    position: absolute;
+    float: right;
+    top: -57px;
+    right: 10px;
+}
+
+.jsquare-users-list-arrows .uk-slidenav {
+    font-size: 20px;
+    width: 40px;
+}
+
+.jsquare-users-list-arrows .uk-slidenav:before {
+	background: rgba(42, 50, 68, 0.7);
+	padding: 5px 14px;
+	color: #fff;
+	border-radius: 4px;
+	transition: all .4s ease;
+}
+
+.jsquare-users-list-arrows .uk-slidenav:hover:before {
+	background: #2a3244;
+	transition: all .4s ease;
+}
+
+.jsquare-user-box {
+	width: 100%;
+}
+
+.jsquare-users-list .uk-overlay-background {
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+}
+
+.jsquare-users-list figure,
+.jsquare-users-list img {
+	width: 100%;
+	height: 200px;
+    object-fit: cover;
+}
+
+.jsquare-user-name {
+	float: left;
+    font-size: 18px;
+	margin: 0;
+}
+
+.jsquare-user-name span {
+    display: block;
+    color: rgb(202, 210, 228);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.jsquare-user-icons {
+	float: right;
+	padding: 15px 0 0 0;
+	margin: 0;
+}
+
+.jsquare-user-icons a {
+	font-size: 18px;
+	color: #727272;
+	padding: 0 6px;
+}
+
+.jsquare-user-icons a:hover {
+	color: #6A8D9D;
+}
+
+
+
+/* Small Slideset */
+.jsquare-users-list .slideset-one-col {
+	background: #f7f7f7;
+	padding: 30px 0;
+}
+
+.jsquare-users-list .slideset-one-col .uk-slidenav {
+    color: #a0a0a0;
+}
+
+.jsquare-users-list .slideset-one-col figure {
+	height: auto;
+	text-align: center;
+}
+
+.jsquare-users-list .slideset-one-col img {
+	width: 200px !important;
+	height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.jsquare-users-list .slideset-one-col .jsquare-user-name {
+	float: none;
+    font-size: 18px;
+	margin: 0;
+}
+
+.jsquare-users-list .slideset-one-col .jsquare-user-name span {
+    display: block;
+    color: rgb(146, 146, 146);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.jsquare-users-list .slideset-one-col .jsquare-user-icons {
+	float: none;
+}
+
+
+
+/* === Grid Style === */
+.jsquare-users-list .grid-style {
+	background: #fff;
+	padding-bottom: 15px;
+	margin-bottom: 20px !important;
+}
+
+.jsquare-users-list .grid-style p {
+    font-size: 14px;
+    padding: 6px 0;
+    margin: 0 20px;
+}
+
+.jsquare-users-list .grid-style .image {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.jsquare-users-list .grid-style img {
+    height: 185px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-style .name {
+    border: 0;
+    font-size: 18px;
+    padding: 20px 0 10px;
+}
+
+.jsquare-users-list .grid-style p:last-child {
+	border: 0;
+}
+
+.jsquare-users-list .grid-style i {
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #808080;
+    color: #808080;
+}
+
+.jsquare-users-list .grid-style .follow .link-icon {
+	width: auto;
+	padding-right: 0;
+    margin: 0 6px;
+    border: 0;
+    font-size: 13px;
+}
+
+
+/* === Grid Style 2 === */
+.jsquare-users-list .grid-style-2 {
+	float: left;
+	background: #fff;
+	padding-bottom: 15px;
+	margin-bottom: 20px !important;
+}
+
+.jsquare-users-list .grid-style-2 p {
+	float: left;
+	width: 50%;
+    font-size: 11px;
+    padding: 6px 0;
+    margin: 0;
+}
+
+.jsquare-users-list .grid-style-2 .image {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.jsquare-users-list .grid-style-2 img {
+    height: 185px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-style-2 .row {
+	float: left;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.jsquare-users-list .grid-style-2 .name {
+    border: 0;
+    font-size: 18px;
+    padding: 20px 0 10px;
+}
+
+.jsquare-users-list .grid-style-2 p:last-child {
+	border: 0;
+}
+
+.jsquare-users-list .grid-style-2 .job {
+	float: right;
+	text-align: right;
+	padding: 26px 0 0;
+}
+
+.jsquare-users-list .grid-style-2 .follow {
+    text-align: center;
+    float: left;
+    width: 100%;
+    background: #fdfdfd;
+    padding: 0 0 12px;
+    margin-bottom: -15px;
+}
+
+.jsquare-users-list .grid-style-2 .follow span {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #727272;
+    font-weight: 300;
+}
+
+.jsquare-users-list .grid-style-2 .follow i {
+	color: #404040;
+	font-size: 13px;
+	margin: 0 6px;
+}
+
+
+
+/* === Grid Overlay Name === */
+.jsquare-users-list .grid-overlay-name {
+	background: #fff;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+
+.jsquare-users-list .grid-overlay-name p {
+    font-size: 14px;
+    padding: 6px 0;
+    margin: 0 20px;
+}
+
+.jsquare-users-list .grid-overlay-name .image {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.jsquare-users-list .grid-overlay-name img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-overlay-name .name {
+    border: 0;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.jsquare-users-list .grid-overlay-name p:last-child {
+	border: 0;
+}
+
+.jsquare-users-list .grid-overlay-name i {
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #808080;
+    color: #808080;
+}
+
+.jsquare-users-list .grid-overlay-name figure {
+	margin-bottom: 20px;
+}
+
+.jsquare-users-list .grid-overlay-name .uk-overlay-panel {
+	padding: 0;
+}
+
+.jsquare-users-list .grid-overlay-name .follow .link-icon {
+	width: auto;
+	padding-right: 0;
+    margin: 0 6px;
+    border: 0;
+    font-size: 13px;
+}
+
+
+
+/* === Grid Overlay Content === */
+.jsquare-users-list .grid-overlay-content {
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+.jsquare-users-list .grid-overlay-content p {
+    font-size: 12px;
+    padding: 6px 0;
+    margin: 0 20px;
+}
+
+.jsquare-users-list .grid-overlay-content .image {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.jsquare-users-list .grid-overlay-content img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-overlay-content .name {
+    border: 0;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.jsquare-users-list .grid-overlay-content p:last-child {
+	border: 0;
+}
+
+.jsquare-users-list .grid-overlay-content i {
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #eee;
+    color: #eee;
+}
+
+.jsquare-users-list .grid-overlay-content .uk-overlay-panel {
+	padding: 0;
+}
+
+.jsquare-users-list .grid-overlay-content .row {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all .4s ease;
+	margin: 0 !important;
+}
+
+.jsquare-users-list .grid-overlay-content:hover .row {
+    visibility: visible;
+    height: 80px;
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+.jsquare-users-list .grid-overlay-content:hover .name {
+	padding: 20px 0 10px;
+}
+
+.jsquare-users-list .grid-overlay-content:hover a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+.jsquare-users-list .grid-overlay-content .follow .link-icon {
+	width: auto;
+	padding-right: 0;
+    margin: 0 6px;
+    border: 0;
+    font-size: 13px;
+}
+
+
+/* === Grid Modal Style === */
+.jsquare-users-list .grid-modal-style {
+    margin-bottom: 20px;
+}
+
+.jsquare-users-list .grid-modal-style img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-modal img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-modal .uk-modal-dialog {
+    padding: 30px 20px;
+}
+
+.jsquare-users-list .grid-modal .uk-width-1-2:first-child {
+    background: #eee;
+    margin: -30px 0 -30px -20px;
+    text-align: center;
+    padding: 0;
+}
+
+.jsquare-users-list .grid-modal .uk-width-1-2:last-child {
+    padding-left: 35px;
+}
+
+.jsquare-users-list .grid-modal p {
+    margin: 0 0 10px;
+    font-size: 15px;
+    background: #f9f9f9;
+}
+
+.jsquare-users-list .grid-modal .name {
+    background: transparent;
+    margin-top: 45px;
+    font-size: 24px;
+}
+
+.jsquare-users-list .grid-modal i {
+    padding: 8px;
+    margin-right: 10px;
+    background: #7b91ac;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+.jsquare-users-list .grid-modal .follow .link-icon {
+	background: transparent;
+	width: auto;
+	height: auto;
+	padding-right: 0;
+    margin: 0 6px;
+    border: 0;
+    font-size: 13px;
+	color: #404040;
+}
+
+
+
+
+/* === Grid Modal Rounded Image === */
+.jsquare-users-list .grid-modal-rounded img {
+    border-radius: 50%;
+    width: 90%;
+    height: 233px;
+    border: 3px solid #eee;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-modal-rounded .uk-width-1-2:first-child {
+    background: #eee;
+    margin: -30px 0 -30px -20px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+
+/* === Grid 2 Columns === */
+.jsquare-users-list .grid-2-cols {
+	background: #fff;
+	margin-bottom: 15px !important;
+}
+
+.jsquare-users-list .grid-cols-2 .uk-grid > * {
+    padding: 0 !important;
+}
+
+.jsquare-users-list .grid-2-cols .uk-width-1-2:first-child {
+	padding: 0;
+}
+
+.jsquare-users-list .grid-2-cols p {
+    font-size: 14px;
+    padding: 6px 0;
+    margin: 0 20px;
+}
+
+.jsquare-users-list .grid-2-cols .image {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.jsquare-users-list .grid-2-cols img {
+    height: 185px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-2-cols .name {
+    border: 0;
+    font-size: 18px;
+    padding: 45px 0 10px;
+}
+
+.jsquare-users-list .grid-2-cols p:last-child {
+	border: 0;
+}
+
+.jsquare-users-list .grid-2-cols i {
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #808080;
+    color: #808080;
+}
+
+.jsquare-users-list .grid-2-cols .follow .link-icon {
+	width: auto;
+	padding-right: 0;
+    margin: 0 6px;
+    border: 0;
+    font-size: 13px;
+}
+
+/* === Grid Left-Right === */
+.jsquare-users-list .left-right-style {
+	padding: 0 !important;
+}
+
+.jsquare-users-list .left-right-style:nth-child(3) .uk-width-1-2:first-child,
+.jsquare-users-list .left-right-style:nth-child(4) .uk-width-1-2:first-child,
+.jsquare-users-list .left-right-style:nth-child(5) .uk-width-1-2:first-child,
+.jsquare-users-list .left-right-style:nth-child(7) .uk-width-1-2:first-child {
+	order: 2;
+}
+
+.jsquare-users-list .left-right-style .image {
+	position: relative;
+}
+
+.jsquare-users-list .left-right-style .image:after {
+	position: absolute;
+	content: '';
+	border-top: 10px solid transparent;
+	border-right: 10px solid #fff;
+	border-bottom: 10px solid transparent;
+	right: 0;
+	top: 46%;
+}
+
+.jsquare-users-list .left-right-style:nth-child(3) .uk-width-1-2:first-child .image:after,
+.jsquare-users-list .left-right-style:nth-child(4) .uk-width-1-2:first-child .image:after,
+.jsquare-users-list .left-right-style:nth-child(5) .uk-width-1-2:first-child .image:after,
+.jsquare-users-list .left-right-style:nth-child(7) .uk-width-1-2:first-child .image:after {
+	position: absolute;
+	content: '';
+	border-left: 10px solid #fff;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 0;
+	right: auto;
+	left: 0;
+	top: 46%;
+}
+
+.jsquare-users-list .grid-left-right-style {
+	background: #fff;
+	margin-bottom: 0 !important;
+}
+
+.jsquare-users-list .grid-left-right-style .uk-width-1-2 {
+	padding: 0 !important;
+}
+
+.jsquare-users-list .grid-left-right-style p {
+    font-size: 14px;
+    padding: 6px 0;
+    margin: 0 20px;
+}
+
+.jsquare-users-list .grid-left-right-style .image {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.jsquare-users-list .grid-left-right-style img {
+    height: 185px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-left-right-style .name {
+    border: 0;
+    font-size: 18px;
+    padding: 45px 0 10px;
+}
+
+.jsquare-users-list .grid-left-right-style p:last-child {
+	border: 0;
+}
+
+.jsquare-users-list .grid-left-right-style i {
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #808080;
+    color: #808080;
+}
+
+.jsquare-users-list .grid-left-right-style .follow .link-icon {
+	width: auto;
+	padding-right: 0;
+    margin: 0 6px;
+    border: 0;
+    font-size: 13px;
+}
+
+
+/* === Grid Overlay Content Rounded Image === */
+.jsquare-users-list .grid-overlay-content-rounded {
+	background: transparent;
+    margin-bottom: 20px !important;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded p {
+    font-size: 12px;
+    padding: 6px 0;
+    margin: 0 20px;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded .image {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded figure,
+.jsquare-users-list .grid-overlay-content-rounded img {
+    height: 240px;
+    width: 100%;
+	border-radius: 50%;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded .name {
+    border: 0;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded p:last-child {
+	border: 0;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded .uk-overlay-panel {
+	text-align: center;
+	padding: 0;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded .box-row {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded:hover .box-row {
+    visibility: visible;
+    height: 60px;
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded:hover .name {
+	padding: 20px 0 10px;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded:hover a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded .follow {
+    border-left: 1px solid rgba(238, 238, 238, 0.56);
+    padding-left: 5px;
+    margin-left: 12px;
+}
+
+.jsquare-users-list .grid-overlay-content-rounded .follow .link-icon {
+	width: auto;
+	padding-right: 0;
+    margin: 0 6px;
+    border: 0;
+    font-size: 13px;
+}
+
+/* === Grid Overlay Content Rounded Image === */
+.jsquare-users-list .grid-overlay-content-flip {
+	background: transparent;
+    margin-bottom: 20px !important;
+}
+
+.jsquare-users-list .grid-overlay-content-flip p {
+    font-size: 12px;
+    padding: 6px 0;
+    margin: 0 20px;
+}
+
+.jsquare-users-list .grid-overlay-content-flip .image {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.jsquare-users-list .grid-overlay-content-flip figure,
+.jsquare-users-list .grid-overlay-content-flip img {
+    height: 240px;
+    width: 100%;
+	border-radius: 50%;
+	transition: all .4s ease;
+    object-fit: cover;
+}
+
+.jsquare-users-list .grid-overlay-content-flip:hover figure {
+	transform: rotateY(180deg);
+	transition: all .4s ease;
+}
+
+.jsquare-users-list .grid-overlay-content-flip .name {
+    border: 0;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.jsquare-users-list .grid-overlay-content-flip p:last-child {
+	border: 0;
+}
+
+.jsquare-users-list .grid-overlay-content-flip .uk-overlay-panel {
+	text-align: center;
+	padding: 0;
+	margin: 8px;
+	border-radius: 50%;
+}
+
+.jsquare-users-list .grid-overlay-content-flip figcaption {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease;
+	background: rgba(255, 255, 255, 0.9);
+	color: #484848;
+}
+
+.jsquare-users-list .grid-overlay-content-flip figcaption a {
+	color: #545454;
+}
+
+.jsquare-users-list .grid-overlay-content-flip:hover figcaption {
+    visibility: visible;
+    opacity: 1;
+	transform: rotateY(-180deg);
+    transition: all .4s ease;
+}.
+
+.jsquare-users-list .grid-overlay-content-flip:hover .name {
+	padding: 20px 0 10px;
+}
+
+.jsquare-users-list .grid-overlay-content-flip:hover a {
+	color: #000 !important;
+	text-decoration: none;
+}
+
+.jsquare-users-list .grid-overlay-content-flip .follow {
+    border-left: 1px solid rgba(24, 24, 24, 0.15);
+    padding-left: 5px;
+    margin-left: 12px;
+}
+
+.jsquare-users-list .grid-overlay-content-flip .follow .link-icon {
+	width: auto;
+	padding-right: 0;
+    margin: 0 6px;
+    border: 0;
+    font-size: 13px;
+}
+
+
+
+@media (max-width: 768px) {
+	.jsquare-user-box {
+		margin-bottom: 30px !important;
+	}
+	.jsquare-user-img img {
+		height: auto;
+	}
+	.grid-left-right-style .name {
+		padding: 20px 0 10px;
+	}
+	.grid-left-right-style {
+		margin-bottom: 15px !important;
+	}
+	.left-right-style:nth-child(3) .uk-width-1-2:nth-child(2),
+	.left-right-style:nth-child(4) .uk-width-1-2:nth-child(2),
+	.left-right-style:nth-child(5) .uk-width-1-2:nth-child(2),
+	.left-right-style:nth-child(7) .uk-width-1-2:nth-child(2) {
+		order: 2;
+	}
+	
+	.left-right-style .image:after {
+		display: none;
+	}
+	.modal-team-users-rounded .uk-modal-dialog,
+	.modal-team-users .uk-modal-dialog {
+		padding: 30px 0;
+	}
+
+	.modal-team-users-rounded .uk-width-1-2:first-child {
+		background: #eee;
+		margin: -30px 0 0 0;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.modal-team-users .uk-width-1-2:first-child {
+		margin: -30px 0 0;
+	}
+
+	.modal-team-users-rounded .uk-width-1-2:last-child,
+	.modal-team-users .uk-width-1-2:last-child {
+		padding: 0 20px;
+	}
+	.modal-team-users-rounded .uk-close {
+		position: absolute;
+		right: 30px;
+	}
+	.modal-team-users .uk-close {
+		position: absolute;
+		right: 30px;
+		color: #fff;
+		opacity: 1;
+		font-size: 25px;
+	}
+	.grid-overlay-content,
+	.grid-overlay-name {
+		margin-bottom: 20px !important;
+	}
+	.grid-2-cols img,
+	.grid-style-2 img,
+	.grid-style img,
+	.grid-overlay-content img,
+	.grid-overlay-name img,
+	.grid-modal-style img,
+	.grid-left-right-style img {
+		height: auto;
+	}
+	.grid-overlay-content-rounded figure,
+	.grid-overlay-content-rounded img,
+	.grid-overlay-content-flip figure,
+	.grid-overlay-content-flip img {
+		height: 200px !important;
+	}
+	.jsquare-users-list .uk-width-1-4, 
+	.jsquare-users-list .uk-width-1-2 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+	.left-right-style {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.grid-cols-2 {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.grid-overlay-content,
+	.grid-overlay-name,
+	.grid-modal-style {
+		margin-bottom: 20px !important;
+	}
+	.jsquare-users-list .uk-width-1-4,
+	.jsquare-users-list .uk-width-1-2 {
+		width: 50% !important;
+	}
+}

@@ -1,0 +1,1624 @@
+/* ------------------------------------------------------------------
+
+Gym Style CSS RTL - [Table of contents]
+
+1. Basic CSS
+2. Header and Navigation
+3. Widget Title
+4. Widget Areas CSS
+5. Footer
+6. Page, Category and Post CSS
+7. WooCommerce
+8. Widgets
+9. Default WordPress Widgets
+10. Responsive Design
+
+-------------------------------------------------------------------*/
+
+
+/* 1. Basic CSS */
+body {
+	background: #f9f9f9;
+	font-family: 'Noto Sans', sans-serif !important;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right !important;
+}
+
+.container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.hidden-front {
+	display: block;
+}
+
+.front-widget {
+	display: none;
+}
+
+.home .front-widget {
+	display: block;
+}
+
+.hidden-front {
+	display: block;
+}
+
+.home .hidden-front {
+	display: none;
+}
+
+
+/* 2. Header and Navigation */
+.menu-mobile {
+	display: none;
+}
+
+.site-header {
+    position: absolute;
+    width: 90%;
+    z-index: 10;
+    top: 50px;
+    right: 100px;
+}
+
+#site-navigation {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 32px;
+    width: 70px;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.92);
+    z-index: 10;
+}
+
+#site-navigation li {
+    display: block;
+    width: 70px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+#site-navigation li:before {
+    font-size: 20px;
+    color: rgba(45, 45, 45, 0.8);
+    padding: 15px;
+    border-radius: 50px;
+    width: 50px !important;
+    height: 50px !important;
+	transition: color .4s ease;
+}
+
+#site-navigation li:hover:before {
+	color: #e62631;
+	transition: color .4s ease;
+}
+
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    text-indent: -9999px;
+    margin-top: -40px;
+    z-index: 10;
+    position: relative;
+}
+
+
+.site-branding a {
+    text-indent: 0;
+    margin-top: -15px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+
+/* 3. Widget Title */
+.widget-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.widget-title span {
+	position: relative;
+	padding: 0 20px;
+	border-left: 1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
+}
+
+.widget-title span:before {
+	position: absolute;
+	content: '';
+	background: #e4e4e4;
+	width: 40px;
+	height: 1px;
+	top: 18px;
+	right: -40px;
+}
+
+.widget-title span:after {
+	position: absolute;
+	content: '';
+	background: #e4e4e4;
+	width: 40px;
+	height: 1px;
+	top: 18px;
+	left: -40px;
+}
+
+aside .widget-title span:before {
+	top: 12px;
+}
+
+aside .widget-title span:after {
+	top: 12px;
+}
+
+
+
+/* 4. Widget Areas CSS */
+
+/* Showcase */
+
+#showcase {
+	position: relative;
+}
+
+video#bgvid { 
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+#box-container {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.82);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+/* Main Top */
+#main-top {
+    margin-top: -140px;
+	padding-bottom: 40px;
+    z-index: 10;
+    position: relative;
+}
+
+.about {
+    text-align: center;
+    background: #DA1521;
+    color: #fff;
+    padding: 28px 20px;
+}
+
+.about p {
+    font-size: 14px;
+    padding-top: 12px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.93) !Important;
+}
+.about h2 {
+    font-size: 22px;
+}
+.about i {
+    font-size: 35px;
+}
+
+.working-hours {
+    text-align: center;
+    background: #E62631;
+    color: #fff;
+    padding: 28px;
+}
+
+.working-hours p {
+    font-size: 14px;
+    padding-top: 12px;
+    color: rgba(255, 255, 255, 0.93) !Important;
+}
+.working-hours h2 {
+    font-size: 22px;
+}
+.working-hours i {
+    font-size: 35px;
+}
+
+.club-card {
+    text-align: center;
+    background: #F43641;
+    position: relative;
+    color: #fff;
+    padding: 28px 28px 48px;
+}
+
+.club-card p {
+    font-size: 14px;
+    padding-top: 12px;
+    color: rgba(255, 255, 255, 0.93) !Important;
+}
+.club-card h2 {
+    font-size: 22px;
+}
+.club-card i {
+    font-size: 35px;
+}
+
+.club-card a {
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid #fff;
+    padding: 5px 8px 5px;
+    transition: all .4s ease;
+}
+
+.club-card a:hover {
+	text-decoration: none !Important;
+    color: rgba(255, 255, 255, 0.81);
+    border: 1px solid rgba(255, 255, 255, 0.81);
+	transition: all .4s ease;
+}
+
+.club-card .btn {
+    padding: 0;
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+/* Classes */
+
+#classes {
+	padding: 60px 0;
+}
+
+#classes .default-3-rounded .lbutton {
+    display: none !Important;
+}
+
+#classes .default-3-rounded .project-title span.outer {
+    width: 92%;
+    background: #e62631;
+}
+
+
+/* Program */
+#program {
+	background: #fbfbfb;
+	padding: 60px 0;
+}
+
+
+/* Trainers */
+#trainers {
+	padding: 60px 0;
+	background: #1b1616;
+}
+
+#trainers .uk-grid {
+	margin: 0 !important;
+}
+
+#trainers .uk-grid > * {
+	padding: 0 6px !important;
+}
+
+#trainers .widget-title {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* Tips */
+#tips {
+    padding: 60px 0;
+}
+
+#tips .text {
+    text-align: center;
+    font-size: 15px;
+    margin: 50px;
+}
+
+#tips .widget-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.left-tips {
+    text-align: left;
+}
+
+.left-tips i {
+    float: left;
+    margin-top: -13px;
+    margin-right: 20px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    background: #e62631;
+    color: #fff;
+    padding: 13px;
+    text-align: center;
+    border-radius: 50px;
+	transition: all 1s ease;
+}
+
+.left-tips i:hover {
+    transform: rotate(-360deg);
+    transition: all 1s ease;
+}
+
+.right-tips i {
+    margin-top: -13px;
+    margin-left: 20px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    background: #e62631;
+    color: #fff;
+    padding: 13px;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 1s ease;
+}
+.right-tips i:hover {
+    transform: rotate(-360deg);
+    transition: all 1s ease;
+}
+
+
+.left-tips p {
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+.left-tips .weight i {
+    padding: 10px;
+}
+
+.right-tips p {
+    padding: 23px 0 24px;
+    font-size: 16px;
+}
+
+.left-tips p:nth-child(2),
+.left-tips p:nth-child(3) {
+    padding-left: 70px;
+}
+
+.right-tips p:nth-child(2),
+.right-tips p:nth-child(3) {
+	padding-right: 70px;
+}
+
+.right-tips .exercise i {
+    padding: 11px;
+}
+
+
+/* Offers */
+#offers {
+    background: #fff;
+	padding: 60px 0;
+}
+
+#offers .widget-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/* Blog */
+#news {
+	padding: 60px 0;
+}
+
+#news .more-link a {
+    color: #e62631;
+}
+
+
+/* Shop */
+
+#shop {
+	padding: 60px 0;
+	background: #fff;
+}
+
+
+/* Testimonials */
+
+#testimonials {
+	padding: 90px 0;
+    background: url(../../../images/testimonials.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#testimonials .widget-title {
+	text-align: center;
+	margin-bottom: 50px;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* Contact */
+
+#contact {
+	padding: 60px 0;
+}
+
+#contact input, #contact label {
+    width: 95%;
+	padding: 7px;
+    outline: none !Important;
+    margin-bottom: 6px;
+}
+
+#contact textarea, #contact label {
+    width: 95%;
+	padding: 3px;
+    outline: none !Important;
+}
+
+#contact input[type=submit] {
+    font-size: 18px;
+    color: #fff !important;
+    border: 1px solid #e62631;
+    background: #e62631;
+    text-shadow: none !Important;
+    width: 20% !Important;
+    padding: 13px;
+    transition: all .4s ease;
+    box-shadow: none !Important;
+}
+
+#contact input[type=submit]:hover {
+	background: transparent;
+	color: #e62631 !important;
+    transition: all .4s ease;
+}
+
+#contact .address {
+    text-align: center;
+}
+
+#contact .address {
+    background: #fff !important;
+    padding: 36px;
+}
+
+#contact .address i {
+    font-size: 26px;
+    color: #e62631;
+}
+
+#contact .address h2 {
+    position: relative;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+#contact .address h2:after {
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 50px;
+    height: 1px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: -5px;
+}
+
+#contact .month-offer {
+    text-align: center;
+}
+
+#contact .month-offer {
+    background: #fff !important;
+    padding: 36px;
+	margin-top: 15px;
+}
+
+#contact .month-offer i {
+    font-size: 26px;
+    color: #e62631;
+}
+
+#contact .month-offer h2 {
+    position: relative;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+#contact .month-offer h2:after {
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 50px;
+    height: 1px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: -5px;
+}
+
+#contact .month-offer p {
+    margin-bottom: 18px !Important;
+}
+
+#contact .month-offer a {
+    color: #e62631;
+    font-size: 17px;
+    border: 1px solid #e62631;
+    padding: 5px 14px;
+	text-decoration: none !Important;
+	transition: all .4s ease;
+}
+
+#contact .month-offer a:hover {
+	color: #fff !Important;
+    background: #e62631;
+	transition: all .4s ease;
+}
+
+.wpcf7 {
+	text-align: right;
+}
+
+.wpcf7-submit {
+	float: right;
+}
+
+
+/* 5. Footer */
+
+#footer {
+    background: #000;
+    padding: 20px 0;
+	text-align: center;
+}
+
+#footer .widget-title {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+#footer p.about-footer {
+    color: #fff !Important;
+    font-size: 14px;
+}
+
+#footer #wp-subscribe p.text {
+	display: none !Important;
+}
+
+#footer #wp-subscribe h4.title {
+	display: none;
+}
+
+#footer #wp-subscribe {
+    background: transparent !important;
+    margin-top: -8px !Important;
+    padding: 0 !important;
+}
+
+#footer #wp-subscribe input.email-field,
+#footer #wp-subscribe input.name-field {
+    background: #e62631 !important;
+    width: 62% !important;
+    margin: 0;
+    float: right;
+}
+
+#footer #wp-subscribe input.submit {
+    color: #e62631 !important;
+    text-transform: none !important;
+    font-weight: 400 !important;
+    margin: 0 0;
+    font-size: 13px !important;
+    text-shadow: none !Important;
+    width: 38% !important;
+    height: 45px;
+    float: right;
+}
+
+#footer .social a {
+    color: #e2e2e2 !Important;
+    padding: 0px 15px 20px;
+    display: inline-block;
+    font-size: 20px;
+    transition: all .4s ease;
+}
+
+#footer .fa-facebook:hover {
+    color: #4867aa !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-twitter:hover {
+    color: #1da1f2 !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-linkedin:hover {
+    color: #0177b5 !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-pinterest:hover {
+    color: #cb2028 !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-instagram:hover {
+    color: #704abd !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-youtube-play:hover {
+    color: #e62117 !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-vimeo:hover {
+    color: #00b3ec !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-vine:hover {
+    color: #01c794 !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-foursquare:hover {
+    color: #de2c5c !important;
+	transition: all .4s ease;
+}
+
+#footer .fa-behance:hover {
+    color: #0b7cff !important;
+	transition: all .4s ease;
+}
+
+
+#footer .widget-title span:after {
+    background: transparent;
+}
+#footer .widget-title span:before {
+    background: transparent;
+}
+#footer .widget-title span {
+    border: none;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#copyright p {
+    color: #dedede;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+/* 6. Page, Category and Post CSS */
+
+/* Page */
+.page-header {
+    margin: 0;
+}
+
+.page-header .page-title {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+/* Default Post */
+article {
+	position: relative;
+	background: #fff;
+}
+
+article.sticky {
+    border: 3px double #eb6131;
+}
+
+article.sticky .entry-footer {
+    margin: 0;
+}
+
+.entry-title {
+    margin: 0 0 15px;
+    font-size: 22px;
+    padding: 15px 15px 0;
+}
+
+.entry-title a {
+    color: #1fb8e0;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-title a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+.content-area {
+    margin: 40px 0;
+}
+
+.home .content-area {
+	margin: 0;
+}
+
+.entry-meta {
+    position: relative;
+    top: 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+    padding: 8px 15px;
+}
+
+.entry-meta a {
+    color: #1fb8e0;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-meta a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+.entry-content {
+    background: #fff;
+    padding: 20px 20px 0;
+    margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.entry-footer .cat-links, 
+.entry-footer .tags-links {
+    padding-right: 15px;
+}
+
+.entry-footer .comments-link {
+    padding-left: 15px;
+}
+
+.entry-footer a {
+    color: #000;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-footer .edit-link a {
+    color: #e62631;
+}
+
+.entry-footer a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.entry-footer .edit-link a:hover {
+    border-bottom: 1px solid #1fb8e0;
+}
+
+.single .site-content .container,
+.archive .site-content .container,
+.category .site-content .container,
+.search .site-content .container {
+	padding: 80px 0;
+}
+
+.single .entry-footer {
+    margin-bottom: 0 !important;
+}
+
+.post-navigation {
+    background: #fdfdfd;
+    padding: 10px 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.post-navigation a {
+    color: #585858;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.post-navigation a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+#respond {
+    position: relative;
+    margin-top: 40px;
+}
+
+.comment-form .logged-in-as {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+#respond input,
+#respond textarea {
+    padding: 10px;
+    color: #404040;
+    border: 1px solid #f0f0f0;
+    outline: none;
+	width: 100%;
+}
+
+#respond input[type="submit"] {
+	width: auto;
+    padding: 15px 20px;
+    font-size: 16px;
+    background: #e62631;
+    box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    border: 1px solid #e62631;
+    border-radius: 2px;
+    transition: all .4s ease;
+}
+
+#respond input[type="submit"]:hover {
+    background: #fff;
+    color: #e62631;
+    transition: all .4s ease;
+}
+
+/* Sidebar */
+aside .widget-title {
+    font-size: 18px;
+    margin: 40px 0 16px;
+    padding: 0;
+}
+
+
+
+/* 404 Error Page */
+.error-404 {
+    margin: 50px 0;
+    text-align: center;
+    padding: 50px;
+}
+
+.home-link {
+    margin: 40px 0 0;
+}
+
+.home-link .btn-homepage {
+    background: #e62631;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #fff !important;
+}
+
+
+/** 7. woocommerce **/
+
+.woocommerce #primary {
+	margin: 0 !important;
+}
+
+.woocommerce ul.products li.product, 
+.woocommerce-page ul.products li.product {
+	background: #fff;
+}
+
+.woocommerce span.onsale {
+    padding: 0px 18px !Important;
+    background-color: rgba(230, 38, 49, 0.84) !important;
+	border-radius: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    margin: 0 !important;
+}
+
+.woocommerce .product a.button {
+    background-color: rgba(0, 0, 0, 0.61) !Important;
+    color: #fff !important;
+    border-radius: !IMPORTANT 0;
+    font-weight: 100 !important;
+    transition: all .4s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.woocommerce .product a.button:hover {
+    background: #000 !IMPORTANT;
+	transition: all .4s ease;
+}
+
+.woocommerce ul.products li.product .price {
+    color: #25272a !Important;
+    text-align: center;
+    font-size: 14px !important;
+}
+
+.woocommerce ul.products li.product .price del {
+	display: inline-block !important;
+}
+
+.woocommerce ul.products li.product h3 {
+    text-align: center;
+}
+
+
+/** Inside Product **/
+
+.single-product .wp-post-image {
+    margin-top: 0;
+}
+
+.single-product span.onsale {
+    margin: 6px 0 !important;
+}
+
+.single-product .cart .button {
+    background: #000 !important;
+    position: relative;
+    top: auto !important;
+    padding: 9px;
+    border-radius: 0 !important;
+	font-weight: 400 !Important;
+	transition: all .4s ease;
+
+}
+
+.single-product .cart .button:hover {
+    background: #e92649 !important;
+    color: #fff !important;
+	transition: all .4s ease;
+}
+
+.single-product .images {
+	width: 52% !important;
+}
+
+.single-product .summary {
+    margin: 0;
+    padding: 30px !important;
+    background: #fff;
+}
+
+.single-product div.product form.cart div.quantity {
+    margin: 0;
+}
+
+.single-product .quantity input {
+    background: #fafafa;
+    border: 0 !important;
+    padding: 6px !important;
+}
+
+.single-product .product_meta span {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.single-product .product_meta .sku_wrapper, .single-product .product_meta .sku {
+    display: inline-block;
+}
+
+.single-product .product_title {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+}
+
+.single-product p.price, .single-product span.price {
+    color: #404040 !important;
+    font-size: 16px !important;
+}
+
+.related h2 {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.related h2:after {
+    position: absolute;
+    content: '';
+    background: #484848;
+    width: 50px;
+    height: 2px;
+    right: 0;
+    bottom: -10px;
+}
+
+.related .product {
+	background: #fff;
+}
+
+.related .product img {
+	margin: 0 0 20px !important;
+}
+
+.related .products span.onsale {
+    margin-top: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    left: auto !important;
+}
+.related .product a.button {
+    margin: 15px auto 0 !important;
+    width: 100%;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+.related .product a.button:hover {
+	background: #000 !Important;
+	transition: all .4s ease;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.woocommerce #tab-description {
+	padding: 20px !important;
+}
+
+.woocommerce #tab-description h2 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+	font-weight: 100 !important;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    border: 0 !important;
+	border-bottom: none !important;
+	border-radius: 0 !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li:after, .woocommerce div.product .woocommerce-tabs ul.tabs li:before {
+    border: 0 !important;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs:before {
+	border-bottom: 0 !important;
+}
+
+.woocommerce #reviews h2, .woocommerce #reviews h3 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+.woocommerce #reviews {
+    padding: 20px;
+}
+
+
+.single-product .form-submit .submit {
+    background: #e6262f !IMPORTANT;
+    color: #fff !Important;
+    border: 1px solid #e62631 !IMPORTANT;
+    font-weight: 400 !Important;
+    transition: all .4s ease;
+}
+
+.single-product .form-submit  .submit:hover {
+    border: 1px solid #e62631 !IMPORTANT;
+    background: #fff !important;
+    color: #e62631 !important;
+	transition: all .4s ease;
+}
+
+.woocommerce ul.products li.product h3 {
+    color: #000 !important;
+}
+
+.posted_in a {
+    color: #e6262f;
+    text-decoration: none !Important;
+}
+
+/** Cart **/
+.woocommerce-info {
+    border-top-color: #000 !Important;
+}
+.woocommerce-message {
+    border-top-color: #000 !important;
+}
+.woocommerce-message:before {
+    color: #000 !important;
+}
+.woocommerce-info:before {
+    color: #000000 !Important;
+}
+.woocommerce-message a.button {
+    background: #fff !important;
+    text-shadow: none !important;
+    padding: 10px !important;
+    margin: -8px;
+}
+.woocommerce form .form-row label {
+    line-height: 3;
+    font-weight: 100 !important;
+}
+
+.woocommerce-checkout .woocommerce input.button.alt {
+	border: 1px solid #000 !important;
+    background: #000 !IMPORTANT;
+    font-weight: 400 !Important;
+	transition: all .4s ease;
+}
+.woocommerce-checkout .woocommerce input.button.alt:hover {
+	border: 1px solid #000 !important;
+	background: #ebe9eb !important;
+	box-shadow: none !important;
+	color: #000 !important;
+	transition: all .4s ease;
+}
+
+.woocommerce .coupon .button {
+    background: #000 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    text-shadow: none !important;
+    font-size: 13px;
+    padding: 9px 14px;
+}
+
+.shop_table {
+    border: 0 !important;
+}
+
+.shop_table td {
+    padding: 10px !important;
+}
+
+.woocommerce .checkout-button {
+    background: #575757 !important;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2 {
+    width: 100%;
+}
+
+.woocommerce #payment {
+    background: #f9f9f9 !important;
+    border-radius: 0 !important;
+    border: 2px solid #f0f0f0;
+    margin-bottom: 25px;
+}
+
+
+
+/* 8. Widgets */
+
+.default-3-rounded img {
+    height: 215px;
+    width: 100%;
+}
+
+.default-3-rounded .project-title {
+	border: 0 !important;
+}
+
+.default-3-rounded .rbutton {
+	padding: 6px 9px !important;
+	border: 0 !Important;
+}
+
+.widget_jsquare_users_list .grid-style-2 .row {
+    float: right;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.widget_jsquare_users_list .grid-style-2 .name {
+	font-size: 15px !important;
+}
+
+.widget_jsquare_users_list .grid-style-2 .job {
+    padding: 24px 0 0 !important;
+}
+
+.widget_jsquare_users_list .grid-style-2 .label {
+	color: #828282 !important;
+	font-weight: 300;
+}
+
+.widget_jsquare_users_list .follow .fa-facebook:hover {
+    color: #4867aa !important;
+}
+
+.widget_jsquare_users_list .follow .fa-twitter:hover {
+    color: #1da1f2 !important;
+}
+
+.widget_jsquare_users_list .follow .fa-linkedin:hover {
+    color: #0077b5 !important;
+}
+.jsquare-pricing-9 .pricing_btn a:hover {
+    text-decoration: none !Important;
+}
+.jsquare-pricing-9 .jsquare-pt-price p {
+	background: rgba(236, 236, 236, 0.17) !important;
+}
+
+.grid-small-space .category {
+	background: #e62631 !important;
+}
+#testimonials .jsquare-testimonials-4 .jsquare-user-name {
+	color: #fff !Important;
+}
+
+#testimonials .jsquare-testimonials-4 .jsquare-job-company,
+.jsquare-testimonials-4 .jsquare-feedback {
+    color: rgba(255, 255, 255, 0.84) !important;
+}
+
+#testimonials .uk-slidenav {
+    color: #fff !important;
+}
+
+.showcase-overlay-title .category {
+    color: #e62631;
+}
+
+/* 9. Default WordPress Widgets */
+.widget_recent_entries ul, 
+.widget_archive ul, 
+.widget_categories ul, 
+.widget_meta ul, 
+.widget_recent_comments ul, 
+.widget_pages ul, 
+.widget_rss ul,
+.widget_nav_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #f0f0f0;
+}
+
+.widget_recent_entries ul li,
+.widget_archive ul li,
+.widget_categories ul li,
+.widget_meta ul li,
+.widget_recent_comments ul li,
+.widget_pages ul li,
+.widget_rss ul li,
+.widget_nav_menu ul li {
+    background: #fafafa;
+    padding: 10px 15px;
+    margin: 0 0 1px;
+}
+
+.widget_recent_entries ul li:nth-child(2n),
+.widget_archive ul li:nth-child(2n),
+.widget_categories ul li:nth-child(2n),
+.widget_meta ul li:nth-child(2n),
+.widget_recent_comments ul li:nth-child(2n),
+.widget_pages ul li:nth-child(2n),
+.widget_rss ul li:nth-child(2n),
+.widget_nav_menu ul li:nth-child(2n) {
+    background: #f8f8f8;
+}
+
+.widget_recent_entries ul ul, 
+.widget_archive ul ul, 
+.widget_categories ul ul, 
+.widget_meta ul ul, 
+.widget_recent_comments ul ul, 
+.widget_pages ul ul, 
+.widget_rss ul ul,
+.widget_nav_menu ul ul {
+	border: 0;
+}
+
+.widget_recent_entries ul ul li, 
+.widget_archive ul ul li, 
+.widget_categories ul ul li, 
+.widget_meta ul ul li, 
+.widget_recent_comments ul ul li, 
+.widget_pages ul ul li, 
+.widget_rss ul ul li,
+.widget_nav_menu ul ul li {
+	margin: 6px 0 0;
+	padding: 0 10px;
+	background: transparent !important;
+}
+
+.widget_recent_entries a,
+.widget_archive a,
+.widget_categories a,
+.widget_meta a,
+.widget_recent_comments a,
+.widget_pages a {
+    color: #000;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.widget_recent_entries li:hover a,
+.widget_archive li:hover a,
+.widget_categories li:hover a,
+.widget_meta li:hover a,
+.widget_recent_comments li:hover a,
+.widget_pages li:hover a {
+    color: #e62631;
+    padding: 0 8px 0 0;
+    transition: all .4s ease;
+}
+
+.calendar_wrap {
+    border: 1px solid #f0f0f0;
+}
+
+.calendar_wrap caption {
+    background: #fafafa;
+    text-align: center;
+}
+
+.calendar_wrap thead {
+    background: #f0f0f0;
+}
+
+.calendar_wrap thead th {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.calendar_wrap td {
+    text-align: center;
+    padding: 8px;
+    background: #fefefe;
+}
+
+.calendar_wrap a {
+    background: #e62631;
+    padding: 10px;
+    margin: -10px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.calendar_wrap tfoot {
+    display: none;
+}
+
+
+.widget_search,
+.search-form {
+	position: relative;
+}
+
+.widget_search label,
+.search-form label {
+    width: 100%;
+}
+
+
+.widget_search input[type="search"],
+.search-form input[type="search"] {
+    width: 80%;
+    background: #fff;
+    border: 1px solid #fff !Important;
+    color: rgba(24, 24, 24, 0.95);
+    outline: none;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+}
+
+.widget_search input[type="submit"],
+.search-form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28%;
+    padding: 13px 10px 12px 10px;
+    background: #e62631;
+    box-shadow: none;
+    border: 1px solid #e62631 !important;
+    border-radius: 30px 0 0 30px;
+    font-size: 15px;
+    color: #fff;
+    text-shadow: none;
+}
+
+.tagcloud a {
+    font-size: 13px !Important;
+    color: #000;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    background: #f8f8f8;
+    text-decoration: none;
+    padding: 5px 10px 5px;
+    line-height: 36px;
+    margin-left: 4px;
+}
+
+
+/* 10. Responsive Design */
+
+@media (max-width: 767px) {
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+		width: 100%;
+	}
+	#page {	
+		overflow-x: hidden;
+	}
+	.site-header {
+		position: relative !important;
+		width: 100% !important;
+		top: 0 !important;
+		right: 0 !important;
+	}
+	.menu-mobile {
+		display: block;
+		position: absolute;
+		top: 18px;
+		left: 20px;
+		font-size: 30px;
+		color: #686868;
+		z-index: 100;
+	}
+	#mobile-menu .menu,
+	#mobile-menu .menu ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		list-style: none;
+	}
+	#mobile-menu .menu li {
+		display: block;
+		width: 100%;
+		padding: 15px 20px 8px;
+	}
+	#mobile-menu li:before {
+		display: none;
+	}
+	#mobile-menu a {
+		color: #fff;
+	}
+	.about {
+		padding: 28px 20px !important;
+	}
+	.working-hours {
+		padding: 28px !important;
+	}
+	.club-card {
+		padding: 28px 28px 48px !important;
+	}
+	#site-navigation {
+		position: relative !important;
+		bottom: auto !important;
+		top: 0 !important;
+		width: 100% !important;
+		padding: 0 !important;
+	}
+	.site-branding a {
+		margin-top: -1px !important;
+		margin-bottom: 0 !important;
+	}
+	.container {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+	.site-content {
+		overflow-x: hidden;
+	}
+	#main-top {
+		margin: 0 !important;
+	}
+	.widget {
+		margin: 0;
+		width: 100%;
+	}
+	.schedule-default figure, 
+	.schedule-default img {
+		height: auto !important;
+	}
+	.left-tips {
+		text-align: right !important;
+	}
+	.left-tips p {
+		padding: 18px 0 !important;
+	}
+	.left-tips i {
+		float: right !important;
+		margin-left: 15px;
+	}
+	.right-tips p {
+		padding: 23px 0 0 0 !important;
+	}
+	.right-tips i {
+		margin-right: 20px !important;
+		margin-left: 20px;
+	}
+	#tips .text {
+		margin: 50px 20px !important;
+	}
+	#contact label {
+		width: 100%;
+		padding: 0 10px;
+	}
+	#contact textarea, #contact input {
+		width: 100%;
+	}
+	#contact input[type=submit] {
+		width: 50% !important;
+		display: block;
+		margin: 0 auto;
+	}
+	.comment-form .logged-in-as {
+		position: relative !important;
+		top: 0 !important;
+	}
+	.entry-title {
+		margin: 30px 0 20px;
+	}
+	#footer {
+		padding: 20px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 987px) {
+	.site-header {
+		width: auto !important;
+	}
+	.site-content {
+		padding-right: 70px;
+	}
+	.container {
+		width: 80% !important;
+	}
+	.left-tips p {
+		width: 50%;
+		padding: 10px 0;
+		text-align: right;
+		font-size: 13px;
+		float: right;
+	}
+	.left-tips i {
+		float: right;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.right-tips p {
+		padding: 0 !important;
+		margin: 20px 0 10px;
+		width: 50%;
+		float: right;
+		font-size: 13px;
+	}
+	#contact label {
+		width: 100%;
+		padding: 0 10px;
+	}
+	#contact textarea, #contact input {
+		width: 100%;
+	}
+	#contact input[type=submit] {
+		width: 50% !important;
+		display: block;
+		margin: 0 auto;
+	}
+	#footer {
+		padding-right: 70px;
+	}
+}

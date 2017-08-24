@@ -1,0 +1,508 @@
+/* Default Style */
+
+.schedule-default .uk-grid {
+    margin: 0 0 10px !important;
+}
+
+.schedule-default .uk-grid > * {
+    padding: 0 2px 4px !important;
+}
+
+.schedule-default .cat-name {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 13px;
+	width: 95%;
+	background: #333333;
+	color: #fff;
+	padding: 5px 8px;
+	border-left: 2px solid #333;
+	border-radius: 1px;
+	margin: 0 !important;
+}
+
+.schedule-default .cat-name:after {
+	position: absolute;
+	content: '';
+	top: 8px;
+	left: -7px;
+	border-right: 5px solid #333;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.schedule-default figure, .schedule-default img {
+	position: relative;
+    width: 100%;
+    height: 140px;
+}
+
+.schedule-default figcaption {
+    margin: 10px;
+	padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #585858;
+}
+
+.schedule-default figcaption p {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    color: transparent;
+    transition: all .5s ease;
+}
+
+.schedule-default figcaption .class-title {
+    visibility: visible;
+    color: #585858;
+    height: auto;
+}
+
+.schedule-default figcaption .class-info {
+	font-size: 12px;
+}
+
+.schedule-default figcaption .class-room {
+	position: absolute;
+	left: 10px;
+}
+
+.schedule-default figure:hover figcaption p {
+    visibility: visible;
+    height: 22px;
+    color: #585858;
+    transition: all .5s ease;
+}
+
+.schedule-default .class-hours {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	font-size: 12px;
+	color: #fff;
+	margin: 0 !important;
+}
+
+.schedule-default .class-hours .start-hour {
+	float: right;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5px 8px;
+}
+
+.schedule-default .class-hours .duration {
+	float: left;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5px 8px;
+}
+
+.schedule-default .class-hours i {
+	font-size: 10px;
+	padding-left: 5px !important;
+}
+
+
+/* Default 2 Style */
+
+.schedule-default-2 .uk-grid {
+    margin: 0 0 10px !important;
+}
+
+.schedule-default-2 .uk-grid > * {
+    padding: 0 2px 4px !important;
+}
+
+.schedule-default-2 .cat-name {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 13px;
+	width: 95%;
+	background: #333333;
+	color: #fff;
+	padding: 5px 8px;
+	border-left: 2px solid #333;
+	border-radius: 1px;
+	margin: 0 !important;
+}
+
+.schedule-default-2 .cat-name:after {
+	position: absolute;
+	content: '';
+	top: 8px;
+	left: -7px;
+	border-right: 5px solid #333;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.schedule-default-2 figure {
+	position: relative;
+    width: 100%;
+    height: 140px;
+}
+
+.schedule-default-2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.schedule-default-2 figcaption {
+    margin: 10px;
+	padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #585858;
+}
+
+.schedule-default-2 figcaption p {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    color: transparent;
+    transition: all .5s ease;
+}
+
+.schedule-default-2 figcaption .class-title {
+    visibility: visible;
+    color: #585858;
+    height: auto;
+}
+
+.schedule-default-2 figcaption .class-info {
+	font-size: 12px;
+}
+
+.schedule-default-2 figcaption .class-room {
+	position: absolute;
+	left: 10px;
+}
+
+.schedule-default-2 figure:hover .class-hours {
+	padding-top: 5px;
+}
+
+.schedule-default-2 .class-hours {
+	overflow: hidden;
+	width: 100%;
+	font-size: 12px;
+	border-top: 1px solid rgba(24, 24, 24, 0.1);
+}
+
+.schedule-default-2 .class-hours .duration {
+	float: left;
+}
+
+.schedule-default-2 .class-hours i {
+	font-size: 10px;
+	padding-left: 5px !important;
+}
+
+.schedule-default-2 figure:hover figcaption p {
+    visibility: visible;
+    height: 22px;
+    color: #585858;
+    transition: all .5s ease;
+}
+
+
+
+/* Rounded Images Style */
+
+.schedule-rounded-images .uk-grid {
+    margin: 0 0 10px !important;
+}
+
+.schedule-rounded-images .uk-grid > * {
+    padding: 0 5px 4px !important;
+}
+
+.schedule-rounded-images .cat-name {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 13px;
+	width: 95%;
+    top: 6%;
+	background: #333333;
+	color: #fff;
+	padding: 5px 8px;
+	border-left: 2px solid #333;
+	border-radius: 1px;
+	margin: 0 !important;
+}
+
+.schedule-rounded-images .cat-name:after {
+	position: absolute;
+	content: '';
+	top: 8px;
+	left: -7px;
+	border-right: 5px solid #333;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.schedule-rounded-images figure {
+	position: relative;
+	width: 100%;
+	height: 165px;
+	box-shadow: 0 0 2px #b4b4b4;
+	border: 4px solid #ffffff;
+	border-radius: 50%;
+	transition: all .4s ease;
+}
+
+.schedule-rounded-images figcaption {
+	background: rgba(0, 0, 0, 0.45);
+	transition: all .4s ease;
+}
+
+.schedule-rounded-images img {
+	position: relative;
+    width: 100%;
+	height: 100%;
+}
+
+.schedule-rounded-images figure:hover {
+    transform: rotateY(180deg);
+    transition: all .6s ease;
+}
+
+.schedule-rounded-images figure:hover figcaption {
+    transform: rotateY(-180deg);
+    transition: all .6s ease;
+}
+
+.schedule-rounded-images figcaption p {
+	margin: 0 !important;
+}
+
+.schedule-rounded-images .class-overlay-info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    padding: 60px 0;
+    font-size: 13px;
+    text-align: center;
+	transition: all .6s ease;
+	color: transparent;
+}
+
+.schedule-rounded-images .class-overlay-info i {
+	padding: 0 8px 0 3px;
+}
+
+.schedule-rounded-images .class-room {
+	padding-right: 5px;
+}
+
+.schedule-rounded-images figure:hover .class-overlay-info {
+    visibility: visible;
+    color: #fff;
+    transform: rotateY(-180deg);
+	transition: all .6s ease;
+}
+
+.schedule-rounded-images figure:hover .class-title {
+	display: none;
+	transition: all .6s ease;
+}
+
+.schedule-rounded-images .class-hours,
+.schedule-rounded-images .class-info {
+	margin: 5px 0 !important;
+}
+
+/* Rounded Images Overlay Text Style */
+
+.schedule-rounded-overlay .uk-grid {
+    margin: 0 0 10px !important;
+}
+
+.schedule-rounded-overlay .uk-grid > * {
+    padding: 0 5px 4px !important;
+}
+
+.schedule-rounded-overlay .cat-name {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 13px;
+	width: 95%;
+    top: 6%;
+	background: #333333;
+	color: #fff;
+	padding: 5px 8px;
+	border-left: 2px solid #333;
+	border-radius: 1px;
+	margin: 0 !important;
+}
+
+.schedule-rounded-overlay .cat-name:after {
+	position: absolute;
+	content: '';
+	top: 8px;
+	left: -7px;
+	border-right: 5px solid #333;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.schedule-rounded-overlay figure {
+	position: relative;
+	width: 100%;
+	height: 165px;
+	box-shadow: 0 0 2px #b4b4b4;
+	border: 4px solid #ffffff;
+	border-radius: 50%;
+}
+
+.schedule-rounded-overlay figcaption {
+	background: rgba(0, 0, 0, 0.45);
+	padding: 10px;
+}
+
+.schedule-rounded-overlay .class-title {
+	font-size: 14px;
+	text-align: center;
+}
+
+.schedule-rounded-overlay img {
+	position: relative;
+    width: 100%;
+	height: 100%;
+}
+
+.schedule-rounded-overlay figcaption p {
+    margin: 8px 0 !important;
+}
+
+.schedule-rounded-overlay .class-overlay-info {
+    font-size: 12px;
+    text-align: center;
+}
+
+.schedule-rounded-overlay .class-overlay-info i {
+	padding: 0 8px 0 3px;
+}
+
+.schedule-rounded-overlay .class-room {
+	padding-right: 5px;
+}
+
+
+/* Colored Style - Text only schedule */
+
+.schedule-colored .uk-grid {
+    margin: 0 0 10px !important;
+}
+
+.schedule-colored .uk-grid > * {
+    padding: 0 2px 4px !important;
+}
+
+.schedule-colored .cat-name {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 13px;
+	width: 95%;
+	background: #333333;
+	color: #fff;
+	padding: 5px 8px;
+	border-left: 2px solid #333;
+	border-radius: 1px;
+	margin: 0 !important;
+}
+
+.schedule-colored .cat-name:after {
+	position: absolute;
+	content: '';
+	top: 8px;
+	left: -7px;
+	border-right: 5px solid #333;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.schedule-colored figure, .schedule-colored img {
+	position: relative;
+    width: 100%;
+    height: 140px;
+}
+
+.schedule-colored figcaption {
+    margin: 10px;
+	padding: 8px 12px;
+	background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.schedule-colored figcaption p {
+	font-size: 12px;
+	margin: 5px 0 !important;
+}
+
+.schedule-colored figcaption .class-title {
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 6px;
+}
+
+.schedule-colored .class-hours i {
+	font-size: 10px;
+	padding-left: 5px !important;
+}
+
+.schedule-colored .class-room,
+.schedule-colored .duration {
+	float: left;
+}
+
+
+/* Responsive Design */
+@media (max-width: 767px) {
+	.schedule-default .uk-grid > *,
+	.schedule-default-2 .uk-grid > *,
+	.schedule-rounded-images .uk-grid > *,
+	.schedule-rounded-overlay .uk-grid > *,
+	.schedule-colored .uk-grid > * {
+		width: 100% !important;
+	}
+	.schedule-default .cat-name,
+	.schedule-default-2 .cat-name,
+	.schedule-rounded-images .uk-grid,
+	.schedule-rounded-overlay .uk-grid,
+	.schedule-colored .uk-grid {
+		padding: 10px;
+		width: 100%;
+	}
+	.schedule-default .cat-name:after,
+	.schedule-default-2 .cat-name:after,
+	.schedule-rounded-images .cat-name:after,
+	.schedule-rounded-overlay .cat-name:after,
+	.schedule-colored .cat-name:after {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 978px) {
+	.schedule-default .uk-grid .uk-width-1-10,
+	.schedule-default-2 .uk-grid .uk-width-1-10,
+	.schedule-rounded-images .uk-grid .uk-width-1-10,
+	.schedule-rounded-overlay .uk-grid .uk-width-1-10,
+	.schedule-colored .uk-grid .uk-width-1-10 {
+		width: 20% !important;
+	}
+	.schedule-default .uk-grid .uk-width-9-10,
+	.schedule-default-2 .uk-grid .uk-width-9-10,
+	.schedule-rounded-images .uk-grid .uk-width-9-10,
+	.schedule-rounded-overlay .uk-grid .uk-width-9-10,
+	.schedule-colored .uk-grid .uk-width-9-10 {
+		width: 80% !important;
+	}
+	.schedule-default .uk-grid .uk-width-1-5,
+	.schedule-default-2 .uk-grid .uk-width-1-5,
+	.schedule-rounded-images .uk-grid .uk-width-1-5,
+	.schedule-rounded-overlay .uk-grid .uk-width-1-5,
+	.schedule-colored .uk-grid .uk-width-1-5 {
+		width: 50% !important;
+	}
+}

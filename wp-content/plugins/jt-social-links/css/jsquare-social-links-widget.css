@@ -1,0 +1,9 @@
+.wrap-jsquare-widget label {
+	float: left;
+	width: 28%;
+}
+
+.wrap-jsquare-widget input,
+.wrap-jsquare-widget select {
+	width: 72%;
+}

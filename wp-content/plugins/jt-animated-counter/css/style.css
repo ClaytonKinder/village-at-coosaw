@@ -1,0 +1,78 @@
+.counter-box,
+.counter-box-icon {
+    text-align: center;
+}
+
+.counter-box p,
+.counter-box-2 p {
+	margin: 0;
+}
+
+.jsquare-counter-number,
+.jsquare-counter-number-2,
+.jsquare-counter-number-3,
+.jsquare-counter-number-4 {
+    font-size: 40px;
+    padding: 22px 0;
+}
+
+.jsquare-counter-text {
+	font-style: italic;
+    font-size: 14px;
+	padding-bottom: 22px;
+}
+
+.counter-box-icon .jsquare-counter-text {
+    font-size: 12px;
+	font-style: normal;
+	margin-top: 30px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.counter-box-icon .jsquare-counter-number,
+.counter-box-icon .jsquare-counter-number-2,
+.counter-box-icon .jsquare-counter-number-3, 
+.counter-box-icon .jsquare-counter-number-4 {
+    font-size: 25px;
+    padding: 22px 0;
+}
+
+.counter-box-icon .icon-box {
+    transform: rotate(45deg);
+    margin: 20px 0;
+}
+
+.counter-box-icon .icon-box span {
+    display: inline-block;
+    border: 1px solid #3c3748;
+    background: #3c3748;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.counter-box-icon .icon-box i {
+    font-size: 50px;
+    border-radius: 0;
+    padding: 26px;
+    transform: rotate(-45deg);
+}
+
+.jsquare-white {
+	color: #fff;
+}
+
+.jsquare-black {
+	color: #323232;
+}
+
+
+
+@media (max-width: 767px) {
+	.jsquare-black .uk-width-1-4,
+	.jsquare-white .uk-width-1-4,
+	.jsquare-icon-counter .uk-width-1-4 {
+		width: 100%;
+		padding: 0;
+	}
+}

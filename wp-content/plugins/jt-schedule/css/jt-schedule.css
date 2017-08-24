@@ -1,0 +1,203 @@
+.jt-schedule article {
+    margin: 50px 0;
+}
+
+.jt-schedule .col-md-8 {
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    padding: 20px;
+}
+
+.jt-schedule .col-md-4 {
+    padding: 0 20px 0 0;
+}
+
+.jt-schedule .col-md-8 .class-title {
+    font-size: 22px;
+    padding: 0 0 10px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.jt-schedule ul {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.jt-schedule .class-basic-info {
+    background: #fff;
+    padding: 20px;
+	border: 1px solid #f5f5f5;
+	border-top: 0;
+}
+
+.jt-schedule .class-basic-info p {
+    border-bottom: 1px dotted #f5f5f5;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    font-size: 13px;
+}
+
+.jt-schedule .class-basic-info span {
+    font-weight: bold;
+    width: 85px;
+    display: inline-block;
+}
+
+.jt-schedule .class-basic-info p:last-child {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.jt-schedule article video::-webkit-media-controls {
+    overflow: hidden !important
+}
+
+.jt-schedule video::-webkit-media-controls-enclosure {
+    width: calc(100% + 32px);
+    margin-left: auto;
+}
+
+.jt-schedule article .class-gallery {
+    background: #fff;
+    margin: 0;
+    padding: 7px 6px 3px;
+    border: 1px solid #f5f5f5;
+    border-top: 0;
+}
+
+.jt-schedule article .class-gallery a {
+    padding: 2px;
+    display: inline-block;
+    width: 78px;
+}
+
+.jt-schedule article .class-gallery img {
+    opacity: 0.7;
+    width: 100%;
+    height: 60px;
+    margin: 0 0 6px;
+    transition: all .4s ease;
+}
+
+.jt-schedule article .class-gallery img:hover {
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+
+.jt-schedule article .sign-in-btn {
+    float: right;
+    font-size: 13px;
+    background: #484848;
+    color: #fff;
+    padding: 8px 20px;
+    margin: -4px 0 0;
+    border-radius: 50px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.jt-schedule article .sign-in-btn:hover {
+    background: #60b6db;
+    transition: all .4s ease;
+}
+
+
+/* Admin CSS */
+#schedule-tabs-nav {
+    background: #f9f9f9;
+    border: 1px solid #f0f0f0;
+    padding: 0 10px;
+}
+
+#schedule-tabs-nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+#schedule-tabs-nav li a {
+    position: relative;
+    outline: none;
+    color: #a6a6a6;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    box-shadow: none !important;
+}
+
+#schedule-tabs-nav li.uk-active a:after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px #ccc;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#schedule-tabs-nav li.uk-active a {
+    color: #484848;
+}
+
+#schedule-tabs {
+    border: 1px solid #f0f0f0;
+    margin: -14px 0 0;
+    padding: 20px;
+}
+
+
+/* Sign Up Box */
+#sign-up-box .uk-modal-header {
+    background: #f9f9f9;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#sign-up-box .uk-close {
+    float: right;
+    margin: 5px 0;
+}
+
+#sign-up-box label {
+    color: #57a6c3;
+    font-weight: normal;
+    width: 30%;
+    display: inline-block;
+}
+
+#sign-up-box input {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #dedede;
+    border-radius: 0;
+    padding: 0;
+    background: #fff;
+}
+
+#sign-up-box input[type="submit"] {
+    background: #484848;
+    transition: all .4s ease;
+    padding: 10px 28px;
+    margin: 30px 0 0;
+    font-size: 15px;
+    box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    border-radius: 50px;
+}
+
+#sign-up-box input[type="submit"]:hover {
+    background: #57a6c3;
+    transition: all .4s ease;
+}

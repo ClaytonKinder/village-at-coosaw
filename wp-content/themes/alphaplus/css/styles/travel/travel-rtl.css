@@ -1,0 +1,1353 @@
+/* ------------------------------------------------------------------
+
+Travel Style CSS RTL - [Table of contents]
+
+1. Basic CSS
+2. Header and Navigation
+3. Widget Areas CSS
+4. Footer
+5. Widgets
+6. Default WordPress Widgets
+7. Page, Category and Post CSS
+8. WooCommerce
+9. Responsive Design
+
+-------------------------------------------------------------------*/
+
+
+/* 1. Basic CSS */
+body {
+	font-family: 'Lato', sans-serif !important;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+}
+
+.hidden-front {
+	display: block;
+}
+
+.front-widget {
+	display: none;
+}
+
+.home .front-widget {
+	display: block;
+}
+
+.hidden-front {
+	display: block;
+}
+
+.home .hidden-front {
+	display: none;
+}
+
+.site-content .widget-title {
+    text-align: center;
+    margin: 30px;
+    font-size: 26px;
+}
+
+.site-content .widget-title span {
+    position: relative;
+}
+
+.site-content .widget-title span:before {
+    position: absolute;
+    content: '';
+    background: #389ac3;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    top: 12px;
+    right: -25px;
+}
+
+.site-content .widget-title span:after {
+    position: absolute;
+    content: '';
+    background: #389ac3;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    top: 12px;
+    left: -25px;
+}
+
+.archive .page-title {
+    margin: 0 0 20px !important;
+    padding: 0 !important;
+    font-size: 30px !important;
+    text-align: right !important;
+    position: relative;
+}
+
+aside .widget-title {
+    margin: 0 0 20px !important;
+    padding: 0 !important;
+    font-size: 20px !important;
+    text-align: right !important;
+    position: relative;
+}
+
+.archive .page-title:after,
+aside .widget-title:after {
+    position: absolute;
+    content: '';
+    background: #1fb8e0;
+    width: 40px;
+    height: 2px;
+    right: 0;
+    bottom: -8px;
+}
+
+
+/* 2. Header and Navigation */
+.site-header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.site-branding {
+	padding-top: 18px;
+}
+
+.menu-mobile {
+	display: none;
+}
+
+#header-widget, #social {
+    display: inline-block;
+}
+
+#header-widget p, #social p {
+    display: inline-block;
+    margin: 0 10px;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.95);
+    border-left: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+#social a {
+    color: #fff;
+    padding-right: 10px;
+	transition: all .3s ease;
+}
+
+#social a:hover {
+    color: rgba(255, 255, 255, 0.84);
+	transition: all .3s ease;
+}
+
+#header-widget i {
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-top {
+    text-align: left;
+    padding: 15px 0 0;
+}
+
+#site-navigation {
+    margin: -10px 0;
+    text-align: left;
+}
+
+#site-navigation li {
+    float: none;
+    display: inline-block;
+    border-top: 1px solid rgba(255, 255, 255, 0.37);
+    margin: 0 -1px 0 -1.5px;
+}
+
+#site-navigation a {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px 0;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+#site-navigation li:first-child a {
+    padding-right: 5px;
+}
+
+#site-navigation li:last-child a {
+    padding-left: 5px;
+}
+
+#site-navigation a:hover {
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.main-navigation ul ul {
+    background: rgba(255, 255, 255, 0.98);
+    top: 50px;
+    border: 1px solid #f0f0f0;
+    box-shadow: none !important;
+    text-align: left;
+}
+
+.main-navigation ul ul li {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.main-navigation ul ul li a {
+    padding: 12px 0 !important;
+}
+
+
+
+/* 3. Widget Areas CSS */
+
+/* Showcase */
+
+#showcase .widget:first-child {
+    margin: 0;
+}
+
+
+.destinations {
+    background: #137198;
+    padding: 50px 33px;
+}
+
+.destinations h3 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.destinations i {
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 11px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-left: 20px;
+	transition: all 1s ease;
+}
+
+.destinations i:hover {
+    transform: rotate(-360deg);
+    transition: all 1s ease;
+}
+
+.destinations p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.89);
+}
+
+.best-price {
+    background: #2b88af;
+    padding: 50px 33px;
+}
+
+.best-price h3 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.best-price i {
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 11px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-left: 20px;
+	transition: all 1s ease;
+}
+
+.best-price i:hover {
+    transform: rotate(-360deg);
+    transition: all 1s ease;
+}
+
+.best-price p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.89);
+}
+
+.support {
+    background: #389ac3;
+    padding: 50px 33px;
+}
+
+.support h3 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.support i {
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 11px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-left: 20px;
+    transition: all 1s ease;
+}
+
+.support i:hover {
+    transform: rotate(-360deg);
+    transition: all 1s ease;
+}
+
+.support p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.89);
+}
+
+
+#top-destinations {
+	padding: 80px 0 100px;
+}
+
+#destinations {
+	background: #f9f9f9;
+	padding: 80px 0 100px;
+}
+
+#activities, 
+#offers, 
+#news {
+    padding: 80px 0;
+}
+
+
+/* Activities */
+
+#activities {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#activities .row {
+    margin: 0 !important;
+}
+
+#activities .col-md-6 {
+    padding: 0 !important;
+}
+
+#activities img,
+#activities .text-box {
+    min-height: 380px;
+	object-fit: cover;
+}
+
+#activities .text-box {
+    padding: 70px 20px !important;
+    background: #fbfbfb;
+}
+
+#activities h3 {
+    font-size: 26px;
+}
+
+#activities p {
+    font-size: 15px;
+    padding: 22px;
+}
+
+/* Offers */
+
+#offers {
+    padding: 60px 0;
+    background: url(../../../images/santorini.jpg) center no-repeat;
+    background-size: cover;
+	text-align: center;
+}
+
+#offers p {
+    font-size: 16px;
+    padding: 16px 0 25px;
+    font-style: italic;
+}
+
+#offers .book-now {
+    font-style: inherit;
+    font-size: 20px;
+}
+
+#offers .book-now a {
+    color: #fff;
+    border: 1px solid #158bbc;
+    border-radius: 30px;
+    padding: 11px 17px 11px 17px;
+    background: #158bbc;
+    text-decoration: none;
+}
+
+#offers .book-now a i {
+    font-size: 15px;
+    visibility: hidden;
+    width: 0;
+    color: transparent;
+    transition: all .4s ease;
+}
+
+#offers .book-now:hover a i {
+    visibility: visible;
+    width: 30px;
+    color: #fff;
+    padding-right: 15px;
+    transition: all .4s ease;
+}
+
+
+/* Newsletter */
+
+#newsletter {
+	padding: 60px 0;
+    text-align: center;
+    background: #158bbc;
+	color: #fff;
+}
+
+#newsletter .es_lablebox {
+	display: inline-block !Important;
+	width: 6%;
+}
+
+#newsletter .es_textbox {
+	display: inline-block !Important;
+	width: 23%;
+}
+
+#newsletter input[type="text"] {
+    padding: 8px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+	color: #fff !Important;
+}
+
+#newsletter .es_button {
+	display: inline-block !Important;
+}
+
+#newsletter input[type="button"] {
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 30px;
+    background: rgba(255, 255, 255, 0.97);
+    color: #158bbc;
+    border: 2px solid #fff;
+    transition: all .3s ease;
+
+}
+
+#newsletter input[type="button"]:hover {
+    background: transparent;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+
+
+/* 4. Footer */
+
+#footer {
+    padding: 60px 0 30px;
+    background: #2c2c2c;
+}
+
+#footer .footer-about img {
+    margin: -18px 0 10px;
+}
+
+#footer .footer-about p {
+    color: #c7c7c7;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 0 0 0 30px;
+}
+
+#footer .contact-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+
+#footer .contact-info p {
+    font-size: 13px;
+    color: #c7c7c7;
+    margin: 15px 0;
+}
+
+.social p {
+    font-size: 13px;
+    margin: 15px 0;
+}
+.social a {
+    color: #c7c7c7;
+    text-decoration: none !Important;
+	transition: all .3s ease;
+}
+
+.social a:hover {
+    color: #fff;
+	transition: all .3s ease;
+}
+
+#footer h2 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+
+#footer .showcase-small-list .posts-showcase-links .row {
+    background: rgba(255, 255, 255, 0.05) !important;
+    margin: 0 0 10px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#footer .showcase-small-list .title {
+	font-size: 13px !important;
+}
+
+#footer .showcase-small-list .posts-showcase-links .row a {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+#copyright {
+    color: #fff;
+	overflow: auto;
+}
+
+#copyright p {
+	float: right;
+}
+
+#totop-btn {
+	float: left;
+}
+
+#totop-btn a {
+	color: #fff;
+}
+
+
+/* 5. Widgets */
+
+.grid-small-space .category {
+	background: #158bbc !Important;
+}
+
+.jt-travel-booking .destination-price-box {
+    background: rgb(21, 138, 185);
+}
+
+
+.jt-travel-booking .uk-tab .uk-active a {
+    background: #158ab9 !important;
+}
+
+.jt-travel-booking .book-destination-box .col-md-3 {
+    background: rgb(21, 138, 185);
+}
+
+.jt-travel-booking .more-destinations-section h4 span:before {
+	 background: #158ab9 !important;
+}
+
+.jt-travel-booking .more-destinations-section h4 span:after {
+	 background: #158ab9 !important;
+}
+
+.destinations-default .destination-more-info a {
+    color: #389ac3 !Important;
+    transition: all .4s ease;
+}
+
+.destinations-default .destination-more-info a:hover {
+	color: #fff !Important;
+	transition: all .4s ease;
+	box-shadow: inset -110px 0 0 0 #158bbc !important;
+}
+
+
+/* 6. Default WordPress Widgets */
+.widget_recent_entries ul, 
+.widget_archive ul, 
+.widget_categories ul, 
+.widget_meta ul, 
+.widget_recent_comments ul, 
+.widget_pages ul, 
+.widget_rss ul,
+.widget_nav_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #f0f0f0;
+}
+
+.widget_recent_entries ul li,
+.widget_archive ul li,
+.widget_categories ul li,
+.widget_meta ul li,
+.widget_recent_comments ul li,
+.widget_pages ul li,
+.widget_rss ul li,
+.widget_nav_menu ul li {
+    background: #fafafa;
+    padding: 10px 15px;
+    margin: 0 0 1px;
+}
+
+.widget_recent_entries ul li:nth-child(2n),
+.widget_archive ul li:nth-child(2n),
+.widget_categories ul li:nth-child(2n),
+.widget_meta ul li:nth-child(2n),
+.widget_recent_comments ul li:nth-child(2n),
+.widget_pages ul li:nth-child(2n),
+.widget_rss ul li:nth-child(2n),
+.widget_nav_menu ul li:nth-child(2n) {
+    background: #f8f8f8;
+}
+
+.widget_recent_entries ul ul, 
+.widget_archive ul ul, 
+.widget_categories ul ul, 
+.widget_meta ul ul, 
+.widget_recent_comments ul ul, 
+.widget_pages ul ul, 
+.widget_rss ul ul,
+.widget_nav_menu ul ul {
+	border: 0;
+}
+
+.widget_recent_entries ul ul li, 
+.widget_archive ul ul li, 
+.widget_categories ul ul li, 
+.widget_meta ul ul li, 
+.widget_recent_comments ul ul li, 
+.widget_pages ul ul li, 
+.widget_rss ul ul li,
+.widget_nav_menu ul ul li {
+	margin: 6px 0 0;
+	padding: 0 10px;
+	background: transparent !important;
+}
+
+.widget_recent_entries a,
+.widget_archive a,
+.widget_categories a,
+.widget_meta a,
+.widget_recent_comments a,
+.widget_pages a {
+    color: #000;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.widget_recent_entries li:hover a,
+.widget_archive li:hover a,
+.widget_categories li:hover a,
+.widget_meta li:hover a,
+.widget_recent_comments li:hover a,
+.widget_pages li:hover a {
+    color: #1fb8e0;
+    padding: 0 8px 0 0;
+    transition: all .4s ease;
+}
+
+.calendar_wrap {
+    border: 1px solid #f0f0f0;
+}
+
+.calendar_wrap caption {
+    background: #fafafa;
+    text-align: center;
+}
+
+.calendar_wrap thead {
+    background: #f0f0f0;
+}
+
+.calendar_wrap thead th {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.calendar_wrap td {
+    text-align: center;
+    padding: 8px;
+    background: #fefefe;
+}
+
+.calendar_wrap tfoot {
+    display: none;
+}
+
+
+.widget_search,
+.search-form {
+	position: relative;
+}
+
+.widget_search label,
+.search-form label {
+    width: 100%;
+}
+
+.widget_search input[type="search"],
+.search-form input[type="search"] {
+    width: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.95);
+    border: 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.widget_search input[type="submit"],
+.search-form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+	width: 20%;
+    padding: 13px 12px 12px 13px;
+    background: rgba(35, 35, 35, 0.8);
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    font-size: 15px;
+    color: #fff;
+    text-shadow: none;
+}
+
+.tagcloud a {
+    font-size: 13px !Important;
+    color: #000;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    background: #f8f8f8;
+    text-decoration: none;
+    padding: 5px 10px 5px;
+    line-height: 36px;
+    margin-left: 4px;
+}
+
+
+
+/* 7. Page, Category and Post CSS */
+
+/* Page */
+.page-header {
+    margin: 0;
+}
+
+.page-header .page-title {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+/* Default Post */
+article {
+	position: relative;
+	background: #fff;
+	border: 1px solid #f0f0f0;
+}
+
+article.sticky {
+    border: 3px double #1fb8e0;
+}
+
+article.sticky .entry-footer {
+    margin: 0;
+}
+
+.entry-title {
+    margin: 0 0 15px;
+    font-size: 22px;
+    padding: 15px 15px 0;
+}
+
+.entry-title a {
+    color: #1fb8e0;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-title a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+.content-area {
+    margin: 40px 0;
+}
+
+.home .content-area {
+	margin: 0;
+}
+
+.entry-meta {
+    position: relative;
+    top: 0;
+    background: #fbfbfb;
+    padding: 8px 15px;
+}
+
+.entry-meta a {
+    color: #1fb8e0;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-meta a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+.entry-content {
+    background: #fff;
+    padding: 20px 20px 0;
+    margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.entry-content p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 10px;
+}
+
+.entry-footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 15px;
+}
+
+.entry-footer .cat-links, 
+.entry-footer .tags-links {
+    padding-left: 15px;
+}
+
+.entry-footer .comments-link {
+    padding-left: 15px;
+}
+
+.entry-footer a {
+    color: #000;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.entry-footer .edit-link a {
+    color: #1fb8e0;
+}
+
+.entry-footer a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.entry-footer .edit-link a:hover {
+    border-bottom: 1px solid #1fb8e0;
+}
+
+.single .site-content .container,
+.archive .site-content .container,
+.category .site-content .container,
+.search .site-content .container {
+	padding: 80px 0;
+}
+
+.archive #newsletter .container,
+.single #newsletter .container {
+	padding: 0;
+}
+
+.single .entry-footer {
+    margin-bottom: 0 !important;
+}
+
+.tags-links {
+    margin-left: 15px;
+}
+
+.tags-links a {
+    padding-right: 5px;
+    color: #1fb8e0;
+    text-decoration: none !important;
+    border-bottom: 0 !important;
+    transition: all .4s ease;
+}
+
+.tags-links a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+.edit-link {
+    float: left;
+}
+
+.post-navigation {
+    background: #fdfdfd;
+    padding: 10px 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.post-navigation a {
+    color: #585858;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.post-navigation a:hover {
+    color: #000;
+    transition: all .4s ease;
+}
+
+#respond {
+    position: relative;
+    margin-top: 40px;
+}
+
+.comment-form .logged-in-as {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+#respond input,
+#respond textarea {
+    padding: 10px;
+    color: #404040;
+    border: 1px solid #f0f0f0;
+    outline: none;
+}
+
+#respond input[type="submit"] {
+    padding: 15px 20px;
+    font-size: 16px;
+    background: #1fb8e0;
+    box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    border: 1px solid #1fb8e0;
+    border-radius: 2px;
+    transition: all .4s ease;
+}
+
+#respond input[type="submit"]:hover {
+    background: #fff;
+    color: #1fb8e0;
+    transition: all .4s ease;
+}
+
+/* Sidebar */
+aside .widget-title {
+    font-size: 18px;
+    margin: 0 0 16px;
+    padding: 9px 0 0;
+}
+
+
+
+/* 404 Error Page */
+.error-404 {
+    margin: 50px 0;
+    text-align: center;
+    padding: 50px;
+}
+
+.home-link {
+    margin: 40px 0 0;
+}
+
+.home-link .btn-homepage {
+    background: #158bbc;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #fff !important;
+}
+
+
+/** 8. woocommerce **/
+
+.woocommerce #primary {
+	margin: 0 !important;
+}
+
+.woocommerce ul.products li.product, 
+.woocommerce-page ul.products li.product {
+	background: #fff;
+}
+
+.woocommerce span.onsale {
+    padding: 0px 18px !Important;
+    background-color: rgba(230, 38, 49, 0.84) !important;
+	border-radius: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    margin: 0 !important;
+}
+
+.woocommerce .product a.button {
+    background-color: rgba(0, 0, 0, 0.61) !Important;
+    color: #fff !important;
+    border-radius: !IMPORTANT 0;
+    font-weight: 100 !important;
+    transition: all .4s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.woocommerce .product a.button:hover {
+    background: #000 !IMPORTANT;
+	transition: all .4s ease;
+}
+
+.woocommerce ul.products li.product .price {
+    color: #25272a !Important;
+    text-align: center;
+    font-size: 14px !important;
+}
+
+.woocommerce ul.products li.product .price del {
+	display: inline-block !important;
+}
+
+.woocommerce ul.products li.product h3 {
+    text-align: center;
+}
+
+
+/** Inside Product **/
+
+.single-product .wp-post-image {
+    margin-top: 0;
+}
+
+.single-product span.onsale {
+    margin: 6px 0 !important;
+}
+
+.single-product .cart .button {
+    background: #000 !important;
+    position: relative;
+    top: auto !important;
+    padding: 9px;
+    border-radius: 0 !important;
+	font-weight: 400 !Important;
+	transition: all .4s ease;
+
+}
+
+.single-product .cart .button:hover {
+    background: #e92649 !important;
+    color: #fff !important;
+	transition: all .4s ease;
+}
+
+.single-product .images {
+	width: 52% !important;
+}
+
+.single-product .summary {
+    margin: 0;
+    padding: 30px !important;
+    background: #fff;
+}
+
+.single-product div.product form.cart div.quantity {
+    margin: 0;
+}
+
+.single-product .quantity input {
+    background: #fafafa;
+    border: 0 !important;
+    padding: 6px !important;
+}
+
+.single-product .product_meta span {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.single-product .product_meta .sku_wrapper, .single-product .product_meta .sku {
+    display: inline-block;
+}
+
+.single-product .product_title {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+}
+
+.single-product p.price, .single-product span.price {
+    color: #404040 !important;
+    font-size: 16px !important;
+}
+
+.related h2 {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.related h2:after {
+    position: absolute;
+    content: '';
+    background: #484848;
+    width: 50px;
+    height: 2px;
+    right: 0;
+    bottom: -10px;
+}
+
+.related .product {
+	background: #fff;
+}
+
+.related .product img {
+	margin: 0 0 20px !important;
+}
+
+.related .products span.onsale {
+    margin-top: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    left: auto !important;
+}
+.related .product a.button {
+    margin: 15px auto 0 !important;
+    width: 100%;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+.related .product a.button:hover {
+	background: #000 !Important;
+	transition: all .4s ease;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.woocommerce #tab-description {
+	padding: 20px !important;
+}
+
+.woocommerce #tab-description h2 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+	font-weight: 100 !important;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    border: 0 !important;
+	border-bottom: none !important;
+	border-radius: 0 !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li:after, .woocommerce div.product .woocommerce-tabs ul.tabs li:before {
+    border: 0 !important;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs:before {
+	border-bottom: 0 !important;
+}
+
+.woocommerce #reviews h2, .woocommerce #reviews h3 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+.woocommerce #reviews {
+    padding: 20px;
+}
+
+
+.single-product .form-submit .submit {
+    background: #e6262f !IMPORTANT;
+    color: #fff !Important;
+    border: 1px solid #e62631 !IMPORTANT;
+    font-weight: 400 !Important;
+    transition: all .4s ease;
+}
+
+.single-product .form-submit  .submit:hover {
+    border: 1px solid #e62631 !IMPORTANT;
+    background: #fff !important;
+    color: #e62631 !important;
+	transition: all .4s ease;
+}
+
+.woocommerce ul.products li.product h3 {
+    color: #000 !important;
+}
+
+.posted_in a {
+    color: #e6262f;
+    text-decoration: none !Important;
+}
+
+/** Cart **/
+.woocommerce-info {
+    border-top-color: #000 !Important;
+}
+.woocommerce-message {
+    border-top-color: #000 !important;
+}
+.woocommerce-message:before {
+    color: #000 !important;
+}
+.woocommerce-info:before {
+    color: #000000 !Important;
+}
+.woocommerce-message a.button {
+    background: #fff !important;
+    text-shadow: none !important;
+    padding: 10px !important;
+    margin: -8px;
+}
+.woocommerce form .form-row label {
+    line-height: 3;
+    font-weight: 100 !important;
+}
+
+.woocommerce-checkout .woocommerce input.button.alt {
+	border: 1px solid #000 !important;
+    background: #000 !IMPORTANT;
+    font-weight: 400 !Important;
+	transition: all .4s ease;
+}
+.woocommerce-checkout .woocommerce input.button.alt:hover {
+	border: 1px solid #000 !important;
+	background: #ebe9eb !important;
+	box-shadow: none !important;
+	color: #000 !important;
+	transition: all .4s ease;
+}
+
+.woocommerce .coupon .button {
+    background: #000 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    text-shadow: none !important;
+    font-size: 13px;
+    padding: 9px 14px;
+}
+
+.shop_table {
+    border: 0 !important;
+}
+
+.shop_table td {
+    padding: 10px !important;
+}
+
+.woocommerce .checkout-button {
+    background: #575757 !important;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2 {
+    width: 100%;
+}
+
+.woocommerce #payment {
+    background: #f9f9f9 !important;
+    border-radius: 0 !important;
+    border: 2px solid #f0f0f0;
+    margin-bottom: 25px;
+}
+
+
+/* 9. Responsive Design */
+
+@media (max-width: 767px) {
+	.site-content {
+		overflow-x: hidden;
+	}
+	.site-header {
+		position: relative;
+		background: #353535 !important;
+		padding-bottom: 5px;
+	}
+	.site-branding {
+		padding-top: 0 !important;
+	}
+	.header-top {
+		display: none !important;
+	}
+	.header-top p {
+		border: 0 !important;
+	}
+	.site-content .widget-title {
+		margin: 30px 10px !important;
+		font-size: 24px !important;
+	}
+	.menu-mobile {
+		position: absolute;
+		display: block;
+		font-size: 30px;
+		color: #ffffff;
+		left: 12px;
+		padding: 4px;
+		z-index: 100;
+	}
+	#mobile-menu .menu,
+	#mobile-menu .menu ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		list-style: none;
+	}
+	#mobile-menu .menu li {
+		padding: 15px 20px 8px;
+	}
+	#mobile-menu a {
+		color: #fff;
+	}
+	#activities .text-box {
+		padding: 30px 20px !important;
+	}
+	#activities p {
+		font-size: 14px !important;
+		padding: 20px 0 !important;
+		text-align: justify;
+	}
+	#newsletter .es_lablebox,
+	#newsletter .es_textbox {
+		width: 90% !important;
+	}
+	#newsletter input[type="button"] {
+		margin-right: 0 !important;
+	}
+	.comment-form .logged-in-as {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.widget_search input[type="submit"], .search-form input[type="submit"] {
+		width: 22% !important;
+	}
+}

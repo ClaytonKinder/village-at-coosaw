@@ -1,0 +1,1097 @@
+/* ----- JT Portfolio Stylesheet ----- */
+
+#filter-list {
+    margin: 20px 0;
+    text-align: center;
+    display: block;
+}
+
+#filter-list li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 6px 10px;
+    margin: 0 5px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #f4f4f4;
+    border-radius: 50px;
+    transition: all .3s linear;
+}
+
+#filter-list li a {
+    font-size: 14px;
+    color: #000;
+    transition: all .3s linear;
+}
+
+#filter-list li:hover {
+    background: rgb(61, 77, 99);
+    color: #fff;
+    transition: all .3s linear;
+}
+
+#filter-list li:hover a,
+#filter-list li a:hover {
+    color: #fff !important;
+}
+
+#filter-list .uk-active,
+#filter-list .uk-active a {
+    color: rgb(32, 103, 202) !important;
+}
+
+
+/* --- Default --- */
+.default .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.default > * {
+	padding: 0 6px;
+}
+
+.default .lbutton {
+	background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    text-decoration: none;
+    padding: 7px 20px;
+    margin: 17% 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px 0 0 50px;
+    transition: all .3s ease;
+}
+
+.default .rbutton {
+	background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    text-decoration: none;
+    padding: 7px 20px;
+    margin: 17% 0;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 0;
+    border-radius: 0 50px 50px 0;
+    transition: all .3s ease;
+}
+
+.default .lbutton:hover,
+.default .rbutton:hover {
+	background: rgba(255, 255, 255, 0.92);
+	transition: all .3s ease;
+}
+
+.default .lbutton i,
+.default .rbutton i {
+	padding-right: 4px;
+}
+
+.default .project-title {
+	position: relative;
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+}
+
+.default .project-title:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.default .project-title span {
+    display: block;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
+/* --- Default Rounded Buttons --- */
+.default-rounded .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.default-rounded > * {
+	padding: 0 6px;
+}
+
+.default-rounded .lbutton {
+	background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 17% 15px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.default-rounded .rbutton {
+	background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 17% 0;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 0;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.default-rounded .lbutton:hover,
+.default-rounded .rbutton:hover {
+	background: rgba(255, 255, 255, 0.92);
+	transition: all .3s ease;
+}
+
+.default-rounded .project-title {
+	position: relative;
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+}
+
+.default-rounded .project-title:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.default-rounded .project-title span {
+    display: block;
+    font-size: 13px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #eee;
+    background: #fbfbfb;
+    padding: 10px;
+    margin: 10px -15px -11px;
+}
+
+
+
+/* --- Minimal --- */
+.minimal .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.minimal > * {
+	padding: 0 6px;
+}
+
+.minimal .project-title {
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+    text-align: center;
+}
+
+.minimal .project-title span {
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+
+.minimal .project-info {
+	font-size: 13px;
+}
+
+.minimal .lbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    font-size: 14px;
+    height: 22px;
+    text-decoration: none;
+    padding: 7px 0;
+    border: 0;
+    border-radius: 50px 0 0 50px;
+    transition: all .3s ease;
+}
+
+.minimal .rbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    font-size: 14px;
+    height: 22px;
+    text-decoration: none;
+    padding: 0 0 0 14px;
+    margin-left: 10px;
+    border-left: 1px solid #f0f0f0;
+    border-radius: 0;
+    transition: all .3s ease;
+}
+
+.minimal .lbutton i,
+.minimal .rbutton i {
+	padding-right: 6px;
+}
+
+
+
+/* --- Minimal 2 --- */
+.minimal-two > * {
+	padding: 0 6px;
+}
+
+.minimal-two .project-title {
+	position: relative;
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+    text-align: center;
+}
+
+.minimal-two .project-title span {
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+
+.minimal-two .project-info {
+	font-size: 13px;
+	border-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.minimal-two .lbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 9px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    transition: all .3s ease;
+    position: absolute;
+    top: -34px;
+    right: 33px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0;
+    border: 0;
+}
+
+.minimal-two .rbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 9px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    transition: all .3s ease;
+    position: absolute;
+    top: -34px;
+    right: -1px;
+    background: rgba(12, 12, 12, 0.6);
+    border: 0;
+    color: #fff !important;
+    border-radius: 0;
+}
+
+.minimal-two .lbutton:hover {
+	background: #f7f7f7;
+	transition: all .3s ease;
+}
+
+.minimal-two .rbutton:hover {
+    background: rgba(12, 12, 12, 0.8);
+	transition: all .3s ease;
+}
+
+
+
+/* --- Default 2 Rounded Buttons --- */
+.default-2-rounded > * {
+	padding: 0 6px;
+}
+
+.default-2-rounded .project-title {
+	position: relative;
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+}
+
+.default-2-rounded .project-title span {
+	display: block;
+	width: 70%;
+}
+
+.default-2-rounded .lbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    position: absolute;
+    right: 55px;
+    top: 0;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 9px;
+    margin-top: 4px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.default-2-rounded .rbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 9px;
+    margin-top: 4px;
+    margin-left: 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.default-2-rounded .lbutton:hover,
+.default-2-rounded .rbutton:hover {
+	background: #f7f7f7;
+	transition: all .3s ease;
+}
+
+.default-2-rounded figcaption {
+	background: rgba(24, 24, 24, 0.75);
+}
+
+.default-2-rounded figcaption span {
+    display: block;
+    font-size: 13px;
+}
+
+
+
+/* --- Default 3 Rounded Buttons --- */
+.default-3-rounded > * {
+	padding: 0 6px;
+}
+
+.default-3-rounded .project-title {
+	position: relative;
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+	overflow: hidden;
+}
+
+.default-3-rounded .project-title span.outer {
+    display: block;
+    width: 77%;
+    background: #235b92;
+    color: #fff;
+    padding: 10px 25px;
+    transform: skew(-25deg);
+    margin: -10px 0 -10px -26px;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.default-3-rounded .project-title span.inner {
+    transform: skew(25deg) !important;
+    display: inline-block;
+}
+
+.default-3-rounded .lbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    position: absolute;
+    right: 55px;
+    top: 0;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 9px;
+    margin-top: 5px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.default-3-rounded .rbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 9px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.default-3-rounded .lbutton:hover,
+.default-3-rounded .rbutton:hover {
+	background: #f7f7f7;
+	transition: all .3s ease;
+}
+
+.default-3-rounded figcaption {
+	background: rgba(24, 24, 24, 0.75);
+}
+
+.default-3-rounded figcaption span {
+    display: block;
+    font-size: 13px;
+}
+
+
+
+/* --- Grid --- */
+.grid .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.grid > * {
+	padding: 0;
+}
+
+.grid .lbutton {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	background: rgba(255, 255, 255, 0.45);
+	color: rgba(255, 255, 255, 0.8);
+	display: inline-block;
+	font-size: 14px;
+	height: 34px;
+	text-decoration: none;
+	text-align: center;
+	padding: 7px 20px;
+	margin: 0 -2px 0 0;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	transition: all .3s ease;
+}
+
+.grid .rbutton {
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+	right: 0;
+	background: rgba(255, 255, 255, 0.45);
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	display: inline-block;
+	font-size: 14px;
+	height: 34px;
+	text-decoration: none;
+	padding: 7px 20px;
+	margin: 0;
+	border-left: 0;
+	transition: all .3s ease;
+}
+
+.grid .lbutton:hover,
+.grid .rbutton:hover {
+	background: rgba(255, 255, 255, 0.92);
+	transition: all .3s ease;
+}
+
+.grid .lbutton i,
+.grid .rbutton i {
+	padding-right: 4px;
+}
+
+.grid .project-title {
+    padding: 10px 15px;
+    margin: 5px 0 10px;
+    color: #fff;
+    border: 0;
+    border-top: 0;
+    text-align: center;
+}
+
+.grid .project-info {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+
+/* --- Grid with space --- */
+.grid-space .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.grid-space > * {
+	padding: 8px;
+}
+
+.grid-space .lbutton {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	background: rgba(255, 255, 255, 0.45);
+	color: rgba(255, 255, 255, 0.8);
+	display: inline-block;
+	font-size: 14px;
+	height: 34px;
+	text-decoration: none;
+	text-align: center;
+	padding: 7px 20px;
+	margin: 0 -2px 0 0;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	transition: all .3s ease;
+}
+
+.grid-space .rbutton {
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+	right: 0;
+	background: rgba(255, 255, 255, 0.45);
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	display: inline-block;
+	font-size: 14px;
+	height: 34px;
+	text-decoration: none;
+	padding: 7px 20px;
+	margin: 0;
+	border-left: 0;
+	transition: all .3s ease;
+}
+
+.grid-space .lbutton:hover,
+.grid-space .rbutton:hover {
+	background: rgba(255, 255, 255, 0.92);
+	transition: all .3s ease;
+}
+
+.grid-space .lbutton i,
+.grid-space .rbutton i {
+	padding-right: 4px;
+}
+
+.grid-space .project-title {
+    padding: 10px 15px;
+    margin: 5px 0 10px;
+    color: #fff;
+    border: 0;
+    border-top: 0;
+    text-align: center;
+}
+
+.grid-space .project-info {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* --- Grid Rounded Buttons --- */
+.grid-rounded .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.grid-rounded > * {
+	padding: 0;
+}
+
+.grid-rounded figcaption {
+	text-align: center;
+}
+
+.grid-rounded .lbutton {
+	background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 0 12px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.grid-rounded .rbutton {
+	background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 0;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 0;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.grid-rounded .lbutton:hover,
+.grid-rounded .rbutton:hover {
+	background: rgba(255, 255, 255, 0.92);
+	transition: all .3s ease;
+}
+
+.grid-rounded .project-title {
+    padding: 10px 15px;
+    margin: 5px 0 0;
+    color: #fff;
+    border: 0;
+    border-top: 0;
+    text-align: center;
+}
+
+.grid-rounded .project-info {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+	margin-bottom: 10px;
+}
+
+
+
+/* --- Grid with space - Rounded Buttons --- */
+.grid-space-rounded .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.grid-space-rounded > * {
+	padding: 8px;
+}
+
+.grid-space-rounded figcaption {
+	text-align: center;
+}
+
+.grid-space-rounded .lbutton {
+	background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 0 12px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.grid-space-rounded .rbutton {
+	background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 14px;
+	width: 34px;
+    height: 34px;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 0;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 0;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.grid-space-rounded .lbutton:hover,
+.grid-space-rounded .rbutton:hover {
+	background: rgba(255, 255, 255, 0.92);
+	transition: all .3s ease;
+}
+
+.grid-space-rounded .project-title {
+    padding: 10px 15px;
+    margin: 5px 0 0;
+    color: #fff;
+    border: 0;
+    border-top: 0;
+    text-align: center;
+}
+
+
+.grid-space-rounded .project-info {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+	margin-bottom: 10px;
+}
+
+
+
+
+/* --- Grid 2 Columns --- */
+.grid-2-cols-portfolio .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.grid-2-cols-portfolio > * {
+	padding: 0 6px;
+}
+
+.grid-2-cols-portfolio .uk-grid {
+    margin: 0 0 15px !important;
+    padding: 0 8px !important;
+}
+
+.grid-2-cols-portfolio .uk-grid > * {
+    padding: 0 !important;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+}
+
+.grid-2-cols-portfolio .uk-grid > *:nth-child {
+	border: 0;
+}
+
+.grid-2-cols-portfolio figure,
+.grid-2-cols-portfolio img {
+    width: 100%;
+    height: 156px;
+	object-fit: cover;
+}
+
+.grid-2-cols-portfolio .project-title {
+    padding: 10px 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-2-cols-portfolio .project-title span {
+	display: block;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	text-align: left;
+}
+
+.grid-2-cols-portfolio .project-info {
+	font-size: 13px;
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 13px !important;
+	margin: 0 0 3px 0 !important;
+}
+
+.grid-2-cols-portfolio .lbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    font-size: 13px;
+    height: 20px;
+    text-decoration: none;
+    padding: 7px 0;
+    border: 0;
+    border-radius: 50px 0 0 50px;
+    transition: all .3s ease;
+}
+
+.grid-2-cols-portfolio .rbutton {
+    color: rgba(24, 24, 24, 0.8);
+    display: inline-block;
+    font-size: 13px;
+    height: 20px;
+    text-decoration: none;
+    padding: 0 0 0 14px;
+    margin-left: 10px;
+    border-left: 1px solid #f0f0f0;
+    border-radius: 0;
+    transition: all .3s ease;
+}
+
+.grid-2-cols-portfolio .lbutton i,
+.grid-2-cols-portfolio .rbutton i {
+	padding-right: 6px;
+}
+
+
+/* --- Dynamic Grid --- */
+.dynamic-grid .uk-overlay-background {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.dynamic-grid > * {
+	padding: 0 6px 10px;
+}
+
+.dynamic-grid > *:nth-child(2n) img {
+	width: 100%;
+	min-height: 300px;
+	object-fit: cover;
+}
+
+.dynamic-grid > * img {
+	width: 100%;
+	min-height: 200px;
+	object-fit: cover;
+}
+
+.dynamic-grid .lbutton {
+	float: left;
+	color: transparent;
+	font-size: 13px;
+	text-decoration: none;
+	margin: 0;
+	transition: all .3s ease;
+	visibility: hidden;
+	height: 0;
+    transition: all .4s ease;
+}
+
+.dynamic-grid .rbutton {
+	color: transparent;
+	float: right;
+	font-size: 13px;
+	text-decoration: none;
+	margin: 0;
+	border-left: 0;
+	transition: all .3s ease;
+	visibility: hidden;
+	height: 0;
+    transition: all .4s ease;
+}
+
+.dynamic-grid .lbutton:hover,
+.dynamic-grid .rbutton:hover {
+	color: rgba(255, 255, 255, 0.98);
+	transition: all .3s ease;
+}
+
+.dynamic-grid .lbutton i,
+.dynamic-grid .rbutton i {
+	padding-right: 4px;
+}
+
+.dynamic-grid .project-title {
+	position: relative;
+	padding: 0 4px;
+	margin: 0;
+}
+
+.dynamic-grid .project-title span {
+    display: block;
+    font-size: 13px;
+    visibility: hidden;
+    height: 0;
+    color: transparent;
+    transition: all .4s ease;
+}
+
+.dynamic-grid figure:hover .lbutton,
+.dynamic-grid figure:hover .rbutton {
+	color: rgba(255, 255, 255, 0.8);
+	visibility: visible;
+	height: 30px;
+	padding-top: 10px;
+}
+.dynamic-grid figure:hover .project-title span {
+	visibility: visible !important;
+	height: 60px;
+	padding: 10px 0;
+	margin-top: 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	color: #fff;
+    transition: all .4s ease;
+}
+
+
+/* Slideset */
+.slideset-portfolio ul {
+    margin: 0;
+}
+
+.slideset-portfolio li {
+    padding: 0 8px;
+}
+
+.slideset-portfolio figure, 
+.slideset-portfolio img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.slideset-portfolio figcaption {
+    background: rgba(24, 24, 24, 0.8);
+    font-size: 12px;
+}
+
+.slideset-portfolio .project-title {
+    font-size: 15px;
+	margin: 0;
+	text-align: center;
+}
+
+.slideset-portfolio .project-title span {
+	display: block;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    visibility: hidden;
+    height: 0;
+    color: transparent;
+    transition: all .4s ease;
+}
+
+.slideset-portfolio .lbutton,
+.slideset-portfolio .rbutton {
+	color: transparent;
+	transition: all .3s ease;
+	visibility: hidden;
+	height: 0;
+    transition: all .4s ease;
+}
+
+.slideset-portfolio figure:hover .lbutton,
+.slideset-portfolio figure:hover .rbutton {
+	color: rgba(255, 255, 255, 0.8);
+	visibility: visible;
+	height: 30px;
+	padding-top: 10px;
+}
+.slideset-portfolio figure:hover .project-title span {
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+	visibility: visible !important;
+	height: 60px;
+	padding: 10px 0;
+	margin-top: 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	color: #fff;
+    transition: all .4s ease;
+}
+
+.slideset-portfolio figcaption a {
+    color: #fff;
+}
+
+.slideset-portfolio .lbutton {
+	float: left;
+}
+
+.slideset-portfolio .rbutton {
+    float: right;
+}
+
+.slideset-portfolio i {
+	padding-right: 8px;
+}
+
+.slideset-portfolio .uk-slidenav {
+	color: #fff !important;
+}
+
+
+@media (max-width: 767px) {
+	.widget_jt_portfolio .default figcaption {
+		padding: 0;
+	}
+
+	.widget_jt_portfolio .default figcaption i {
+		display: none;
+	}
+
+	.widget_jt_portfolio .default-rounded figcaption a {
+		padding: 6px 10px !important;
+	}
+
+	.widget_jt_portfolio .default-2-rounded a {
+		padding: 6px 10px !important;
+	}
+
+	.widget_jt_portfolio .default-3-rounded a {
+		border: 0 !important;
+		padding: 6px 10px !important;
+		width: 22px;
+	}
+
+	.widget_jt_portfolio .minimal a {
+		display: block;
+		border: 0;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.widget_jt_portfolio .grid .project-info,
+	.widget_jt_portfolio .grid-space .project-info {
+		display: none;
+	}
+
+	.widget_jt_portfolio .grid a,
+	.widget_jt_portfolio .grid-space a {
+		padding: 7px 0;
+	}
+
+	.widget_jt_portfolio .grid-rounded .project-info,
+	.widget_jt_portfolio .grid-space-rounded .project-info {
+		display: none;
+	}
+
+	.widget_jt_portfolio .grid-rounded a,
+	.widget_jt_portfolio .grid-space-rounded a {
+		padding: 6px 10px !important;
+	}
+
+	.widget_jt_portfolio .grid-2-cols-portfolio .uk-width-1-2 {
+		width: 100% !important;
+	}
+
+	.widget_jt_portfolio .grid-2-cols-portfolio a {
+		display: block;
+		padding: 0;
+		margin: 10px 0;
+		border: 0;
+	}
+}

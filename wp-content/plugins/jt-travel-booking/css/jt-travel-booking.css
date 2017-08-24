@@ -1,0 +1,228 @@
+/* JT Travel Booking Stylesheet */
+
+.single-destinations_list .container {
+	padding: 0 !important;
+}
+
+.jt-travel-booking img {
+	width: 100%;
+	max-height: 640px;
+	object-fit: fill;
+}
+
+.jt-travel-booking .destination-header-info {
+    margin: -81px 0 50px !important;
+    background: rgba(255, 255, 255, 0.95);
+    position: relative;
+}
+
+.jt-travel-booking .destination-header-info .entry-header {
+    padding: 10px 0 !important;
+}
+
+.jt-travel-booking .destination-header-info .destination-title {
+    font-size: 24px;
+    margin: 7px 0 8px;
+}
+
+.jt-travel-booking .destination-header-info i {
+    padding: 0 10px 0 0;
+}
+
+.jt-travel-booking .destination-header-info span {
+    padding-right: 20px;
+}
+
+.jt-travel-booking .destination-price-box {
+    background: rgba(255, 137, 137, 0.8);
+    padding: 19px 0 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.jt-travel-booking .destination-price-box span {
+	font-size: 18px;
+	padding-right: 10px;
+}
+
+.jt-travel-booking .destination-tabs-info {
+    margin: 0 !important;
+}
+
+.jt-travel-booking .destination-tabs-info .col-md-9 {
+    padding: 0 40px 0 10px !important;
+}
+
+.jt-travel-booking .destination-tabs-info .col-md-3 {
+    padding: 0 !important;
+}
+
+.jt-travel-booking .book-destination-box {
+    margin: 40px 0 !important;
+    background: #f9f9f9;
+    border: 1px solid #f0f0f0;
+}
+
+.jt-travel-booking .book-destination-box .col-md-9 {
+    padding: 25px;
+}
+
+.jt-travel-booking .book-destination-box p {
+    margin: 0;
+}
+
+.jt-travel-booking .book-destination-box .col-md-3 {
+    background: rgb(255, 137, 137);
+    padding: 0;
+    text-align: center;
+    font-size: 20px
+}
+
+.jt-travel-booking .book-destination-box a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    display: block;
+    padding: 21px;
+    transition: all .4s ease;
+}
+
+.jt-travel-booking .book-destination-box a:hover {
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.jt-travel-booking .uk-tab {
+    border: 0 !important;
+    margin-bottom: 30px !important;
+}
+
+.jt-travel-booking .uk-tab a {
+    position: relative;
+    background: #f9f9f9 !important;
+    margin: 0 !important;
+    padding: 10px 15px !important;
+    color: #000 !important;
+}
+
+.jt-travel-booking .uk-tab .uk-active a {
+    background: #fd9e9e !important;
+    border: 0 !important;
+    color: #fff !important;
+}
+
+.jt-travel-booking .departure-dates {
+    background: #f9f9f9;
+    border-top: 0;
+    padding: 10px 15px;
+    margin: -50px 0 40px;
+}
+
+.jt-travel-booking .departure-dates ul {
+    margin: 15px 0 0;
+    padding: 15px 0 0;
+    list-style: none;
+    border-top: 1px solid #ffffff;
+    text-align: center;
+	overflow: auto;
+}
+
+.jt-travel-booking .departure-dates ul li {
+    width: 33%;
+    float: left;
+    padding: 0 0 15px;
+}
+
+.jt-travel-booking .more-destinations-section h4 {
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.jt-travel-booking .more-destinations-section h4 span {
+    position: relative;
+}
+
+.jt-travel-booking .more-destinations-section h4 span:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #fd9e9e;
+    /* border: 1px solid #f0f0f0; */
+    border-radius: 50%;
+    left: -25px;
+    top: 7px;
+}
+
+.jt-travel-booking .more-destinations-section h4 span:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #fd9e9e;
+    /* border: 1px solid #f0f0f0; */
+    border-radius: 50%;
+    right: -25px;
+    top: 7px;
+}
+
+.jt-travel-booking #book-form-section {
+    background: #fcfcfc;
+    padding: 30px;
+    margin: -40px 0 40px;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+}
+
+.jt-travel-booking #book-form-section .uk-form-controls {
+	width: 100%;
+	background: #fff !important;
+	border: 1px solid #f0f0f0 !important;
+	border-radius: 0 !important;
+	outline: none !important;
+}
+
+.jt-travel-booking #book-form-section textarea {
+	padding: 7px;
+}
+
+.jt-travel-booking #book-form-section .book-trip-btn {
+	text-align: right;
+}
+
+.jt-travel-booking #book-form-section .book-trip-btn input {
+    background: #000;
+    box-shadow: none;
+    color: #fff;
+    border: 0;
+    border-radius: 0 !important;
+    padding: 14px 25px !important;
+    text-shadow: none !important;
+    font-size: 14px !important;
+}
+
+
+@media (max-width: 767px) {
+	.jt-travel-booking .destination-header-info {
+		margin: 0 0 50px !important;
+	}
+	.jt-travel-booking .destination-header-info span {
+		padding-bottom: 5px;
+		display: block;
+	}
+	.jt-travel-booking .destination-tabs-info .col-md-9 {
+		padding: 0 !important;
+	}
+	.jt-travel-booking .destination-tabs-info li {
+		width: 100%;
+	}
+	.jt-travel-booking .departure-dates {
+		margin: 20px 0 40px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 987px) {
+	.jt-travel-booking .departure-dates {
+		margin: 20px 0 40px !important;
+	}
+}

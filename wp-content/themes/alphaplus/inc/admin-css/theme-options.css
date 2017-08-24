@@ -1,0 +1,83 @@
+.format-settings {
+    width: 31% !important;
+    float: left;
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+    margin: 20px 1% 0;
+}
+
+.format-settings:nth-child(2),
+#setting_gym_page_widgets,
+#setting_mall_page_widgets,
+#setting_page_widgets,
+#setting_spa_page_widgets,
+#setting_travel_page_widgets,
+#setting_photofolio_page_widgets,
+#setting_photofolio_2_page_widgets,
+#setting_product_page_widgets,
+#setting_radio_header_colors,
+#setting_radio_footer_colors,
+#setting_spa_header_colors,
+#setting_spa_footer_colors,
+#setting_mall_header_colors,
+#setting_mall_footer_colors,
+#setting_gym_footer_colors,
+#setting_travel_newsletter_colors,
+#setting_travel_footer_colors,
+#setting_corporation_page_widgets,
+#setting_coming_soon_header_colors,
+#setting_coming_soon_footer_colors,
+#setting_photofolio_header_colors,
+#setting_photofolio_footer_colors,
+#setting_photofolio_2_header_colors,
+#setting_photofolio_2_footer_colors,
+#setting_product_header_colors,
+#setting_product_footer_colors,
+#setting_corporation_header_colors,
+#setting_corporation_footer_colors {
+    width: 100% !important;
+    float: left;
+    border: 0;
+    background: transparent;
+    margin: 20px 1% 0;
+    text-align: center;
+}
+
+.format-setting-label {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+}
+
+.format-setting-label h3 {
+    margin: 0 !important;
+}
+
+.format-setting-wrap {
+    padding: 20px !important;
+}
+
+#setting_post_options_sep,
+#setting_category_options_sep,
+#setting_video_options_sep {
+	display: none;
+}
+
+#setting_site_logo,
+#setting_site_favicon,
+#setting_copyright,
+#setting_totop_button,
+#setting_google_analytics,
+#setting_head_js,
+#setting_body_js,
+#setting_events_bg_video,
+#setting_spa_bg_video,
+#setting_theme_info,
+#setting_photofolio_2_bg_video {
+	width: 98% !important;
+}
+
+#setting_theme_style,
+#setting_homepage_posts {
+	width: 98% !important;
+}

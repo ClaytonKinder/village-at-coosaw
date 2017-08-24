@@ -1,0 +1,165 @@
+/* ------------------------------------------------------------------
+
+Coming Soon CSS - [Table of contents]
+
+1. Basic CSS
+2. Header 
+3. Widget Areas
+4. Footer
+5. Scrollbar CSS
+
+-------------------------------------------------------------------*/
+
+/* 1. Basic CSS */
+body {
+	overflow: hidden;
+}
+
+.site-content {
+	position: relative;
+}
+
+/* 2. Header */
+.site-header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.site-header .header-icon {
+    float: left;
+}
+
+.site-header .header-icon a {
+    font-size: 22px;
+    color: #fff;
+}
+
+.site-header .site-branding {
+    float: right;
+}
+
+
+/* 3. Widget Areas */
+/* Showcase */
+
+.n2-ss-layers-container {
+    background: rgba(0, 0, 0, 0.55);
+	visibility: visible !important;
+}
+
+/* Counter */
+#counter {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    margin: -190px auto;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    color: #fff;
+}
+
+/* Buttons */
+
+.buttons {
+    text-align: center;
+}
+
+.buttons .left-btn {
+    text-decoration: none !important;
+    color: #fff;
+    background: #68d0c7;
+    border: 1px solid #68d0c7;
+	padding: 12px 21px 12px;
+}
+
+.buttons .right-btn {
+    text-decoration: none !important;
+    color: #68d0c7;
+    background: #transparent;
+    border: 1px solid #68d0c7;
+	padding: 12px 21px 12px;
+}
+
+/* Newsletter */
+
+#email-subscribers-2 {
+    text-align: center;
+}
+
+input[type="text"] {
+    outline: none;
+    width: 100%;
+    padding: 7px;
+}
+
+.es_lablebox {
+	padding: 13px 7px 13px !important;
+    float: right !important;
+}
+
+input[type="button"] {
+    padding: 15px 14px 15px;
+    font-size: 13px;
+    background: #68d0c7 !important;
+    text-shadow: none !Important;
+    box-shadow: none !important;
+    color: #fff;
+    border: 1px solid #68d0c7 !important;
+	transition: all .3s ease;
+}
+
+input[type="button"]:hover {
+    background: transparent !important;
+    color: #68d0c7;
+	transition: all .3s ease;
+}
+
+
+/* 4. Footer */
+#footer {
+	position: absolute;
+	background: rgba(24, 24, 24, 0.9);
+	padding: 15px 0;
+	width: 100%;
+	bottom: 0;
+	z-index: 100;
+	color: #fff;
+}
+
+#footer .container {
+	width: 90%;
+}
+
+#footer .widget,
+#footer p {
+	margin: 0;
+}
+
+
+/* 5. Responsive Design */
+@media (max-width: 987px) {
+	.n2-ss-layers-container {
+		height: 100% !important;
+		top: 0;
+		bottom: 0;
+		margin: 0 !important;
+	}
+	#counter {
+		position: absolute;
+		width: 95%;
+		top: 50%;
+		margin: -130px auto;
+		right: 0;
+		left: 0;
+		z-index: 100;
+		text-align: center;
+		color: #fff;
+	}
+	#counter .widget-title {
+		font-size: 18px !important;
+	}
+}

@@ -1,0 +1,63 @@
+.jt-music-charts-default {
+    background: #fbfbfb;
+    margin: 0 !important;
+    padding: 10px !important;
+	transition: all .4s ease;
+}
+
+.jt-music-charts-default:nth-child(2n) {
+    background: #f9f9f9;
+    margin: 1px 0 !important;
+}
+
+.jt-music-charts-default > * {
+    padding: 0 !important;
+}
+
+.jt-music-charts-default:hover {
+	margin-left: -6px !important;
+	margin-right: -6px !important;
+	transition: all .4s ease;
+}
+
+.jt-music-charts-default .number {
+    font-size: 27px;
+    margin: 0;
+    text-align: right;
+    color: #ff748f;
+}
+
+.jt-music-charts-default .song-title {
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 15px !important;
+    margin: 0;
+}
+
+.jt-music-charts-default .artist {
+    display: block;
+    font-size: 12px;
+    padding-left: 15px;
+    margin: 0;
+    color: rgba(24, 24, 24, 0.5);
+}
+
+.jt-music-charts-default .listen-btn {
+    padding-top: 9px;
+	text-align: center;
+}
+
+.jt-music-charts-default .listen-btn a {
+    background: #ff748f !important;
+    color: #fff;
+    padding: 10px 11px 10px 13px;
+    border-radius: 50%;
+	transition: all .4s ease;
+}
+
+.jt-music-charts-default .listen-btn a:hover {
+    background: transparent !important;
+    border: 1px solid #ff748f;
+    color: #ff748f;
+	transition: all .4s ease;
+}

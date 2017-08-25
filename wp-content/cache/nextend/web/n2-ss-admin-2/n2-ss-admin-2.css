@@ -228,8 +228,8 @@ div#n2-ss-0 [onclick].n2-ss-layers-container {
   visibility: visible;
 }
 div#n2-ss-0 .n2-ss-layers-container {
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
 }
 div#n2-ss-0 .n2-ss-layers-container > * {
   visibility: visible;

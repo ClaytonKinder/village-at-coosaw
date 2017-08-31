@@ -8,7 +8,7 @@ Mall Style CSS - [Table of contents]
 4. Footer
 5. Default WordPress Widgets
 6. Page, Category and Post CSS
-7. WooCommerce 
+7. WooCommerce
 8. Responsive Design
 
 -------------------------------------------------------------------*/
@@ -181,7 +181,7 @@ a:hover {
 }
 
 #social a:hover {
-	color: #1fb8e0; 
+	color: #1fb8e0;
 	transition: all .4s ease;
 }
 
@@ -518,13 +518,13 @@ a:hover {
 
 #info {
 	padding: 60px 0;
-	background: url(../../../images/map.png) center no-repeat;
+	background: url(../../../images/charleston.jpg) center no-repeat;
 	background-size: cover;
 }
 
 #info .container {
     background: rgba(255, 255, 255, 0.95);
-    padding: 50px; 
+    padding: 50px;
 }
 
 #info .working-hours,
@@ -749,12 +749,12 @@ a:hover {
 
 
 /* 5. Default WordPress Widgets */
-.widget_recent_entries ul, 
-.widget_archive ul, 
-.widget_categories ul, 
-.widget_meta ul, 
-.widget_recent_comments ul, 
-.widget_pages ul, 
+.widget_recent_entries ul,
+.widget_archive ul,
+.widget_categories ul,
+.widget_meta ul,
+.widget_recent_comments ul,
+.widget_pages ul,
 .widget_rss ul,
 .widget_nav_menu ul {
     margin: 0;
@@ -787,23 +787,23 @@ a:hover {
     background: #f8f8f8;
 }
 
-.widget_recent_entries ul ul, 
-.widget_archive ul ul, 
-.widget_categories ul ul, 
-.widget_meta ul ul, 
-.widget_recent_comments ul ul, 
-.widget_pages ul ul, 
+.widget_recent_entries ul ul,
+.widget_archive ul ul,
+.widget_categories ul ul,
+.widget_meta ul ul,
+.widget_recent_comments ul ul,
+.widget_pages ul ul,
 .widget_rss ul ul,
 .widget_nav_menu ul ul {
 	border: 0;
 }
 
-.widget_recent_entries ul ul li, 
-.widget_archive ul ul li, 
-.widget_categories ul ul li, 
-.widget_meta ul ul li, 
-.widget_recent_comments ul ul li, 
-.widget_pages ul ul li, 
+.widget_recent_entries ul ul li,
+.widget_archive ul ul li,
+.widget_categories ul ul li,
+.widget_meta ul ul li,
+.widget_recent_comments ul ul li,
+.widget_pages ul ul li,
 .widget_rss ul ul li,
 .widget_nav_menu ul ul li {
 	margin: 6px 0 0;
@@ -904,12 +904,12 @@ a:hover {
 }
 
 
-#footer .widget_recent_entries ul, 
-#footer .widget_archive ul, 
-#footer .widget_categories ul, 
-#footer .widget_meta ul, 
-#footer .widget_recent_comments ul, 
-#footer .widget_pages ul, 
+#footer .widget_recent_entries ul,
+#footer .widget_archive ul,
+#footer .widget_categories ul,
+#footer .widget_meta ul,
+#footer .widget_recent_comments ul,
+#footer .widget_pages ul,
 #footer .widget_rss ul,
 #footer .widget_nav_menu ul {
     margin: 0;
@@ -942,23 +942,23 @@ a:hover {
     background: #2d2d2d;
 }
 
-#footer .widget_recent_entries ul ul, 
-#footer .widget_archive ul ul, 
-#footer .widget_categories ul ul, 
-#footer .widget_meta ul ul, 
-#footer .widget_recent_comments ul ul, 
-#footer .widget_pages ul ul, 
+#footer .widget_recent_entries ul ul,
+#footer .widget_archive ul ul,
+#footer .widget_categories ul ul,
+#footer .widget_meta ul ul,
+#footer .widget_recent_comments ul ul,
+#footer .widget_pages ul ul,
 #footer .widget_rss ul ul,
 #footer .widget_nav_menu ul ul {
 	border: 0;
 }
 
-#footer .widget_recent_entries ul ul li, 
-#footer .widget_archive ul ul li, 
-#footer .widget_categories ul ul li, 
-#footer .widget_meta ul ul li, 
-#footer .widget_recent_comments ul ul li, 
-#footer .widget_pages ul ul li, 
+#footer .widget_recent_entries ul ul li,
+#footer .widget_archive ul ul li,
+#footer .widget_categories ul ul li,
+#footer .widget_meta ul ul li,
+#footer .widget_recent_comments ul ul li,
+#footer .widget_pages ul ul li,
 #footer .widget_rss ul ul li,
 #footer .widget_nav_menu ul ul li {
 	margin: 6px 0 0;
@@ -1171,7 +1171,7 @@ article.sticky .entry-header {
 	padding: 0 20px 10px;
 }
 
-.entry-footer .cat-links, 
+.entry-footer .cat-links,
 .entry-footer .tags-links {
     padding-right: 15px;
 }
@@ -1413,7 +1413,7 @@ aside .widget-title span {
 	margin: 0 !important;
 }
 
-.woocommerce ul.products li.product, 
+.woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product {
 	background: #fff;
 }

@@ -16,7 +16,7 @@ get_header(); ?>
 					$post_id = get_the_ID();
 			?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				
+
 					<div class="container">
 						<div class="row store-header">
 							<div class="col-md-4">
@@ -38,49 +38,58 @@ get_header(); ?>
 									$phone = esc_attr( get_post_meta( $post_id, 'store_phone', true ) );
 									$fax = esc_attr( get_post_meta( $post_id, 'store_fax', true ) );
 									$email = esc_attr( get_post_meta( $post_id, 'store_email', true ) );
-				
+									$website = esc_attr( get_post_meta( $post_id, 'store_website', true ) );
+
 									if (!empty ($short_info)) {
 										echo '<p class="store-short-info">' . $short_info . '</p>';
 									}
-	
+
 									if ( (!empty ($location)) || (!empty ($map))) {
 										echo '<p class="store-basic-info">';
-											
+
 											if (!empty ($location)) {
 												echo '<span><i class="fa fa-map-marker"></i>' . $location . '</span>';
 											}
-										
+
 											if (!empty ($map)) {
 												echo '<a href="#store-map" data-uk-modal><span><i class="fa fa-map-o"></i> Check the map</span></a>';
 											}
-										
+
+
+
 										echo '</p>';
 									}
 
 									if ( (!empty ($phone)) || (!empty ($fax)) || (!empty ($email)) ) {
 										echo '<p class="store-basic-info">';
-										
+
 											if (!empty ($phone)) {
 												echo '<span><i class="fa fa-phone"></i>' . $phone . '</span>';
 											}
-										
+
 											if (!empty ($fax)) {
 												echo '<span><i class="fa fa-fax"></i>' . $fax . '</span>';
 											}
-										
+
 										echo '</p>';
 									}
-										
+
 									if (!empty ($email)) {
 										echo '<p class="store-basic-info">';
 											echo '<span><i class="fa fa-envelope"></i>' . $email . '</span>';
 										echo '</p>';
 									}
+
+									if (!empty ($website)) {
+										echo '<p class="store-basic-info">';
+											echo '<span><i class="fa fa-globe"></i>' . '<a target="_blank" href="' . $website . '">' . $website . '</a>' . '</span>';
+										echo '</p>';
+									}
 								?>
-								
+
 							</div>
 						</div>
-						
+
 						<div class="store-tabs">
 							<?php
 								$info = wpautop(get_post_meta( $post_id, 'store_info', true ));
@@ -155,7 +164,7 @@ get_header(); ?>
 								</li>
 							</ul>
 						</div>
-							
+
 						<?php
 							$img1 = get_post_meta( $post_id, 'store_img1', true );
 							$img2 = get_post_meta( $post_id, 'store_img2', true );
@@ -169,7 +178,7 @@ get_header(); ?>
 							$img10 = get_post_meta( $post_id, 'store_img10', true );
 							$img11 = get_post_meta( $post_id, 'store_img11', true );
 							$img12 = get_post_meta( $post_id, 'store_img12', true );
-	
+
 							if ( (!empty ($img1)) || (!empty ($img2)) || (!empty ($img3)) || (!empty ($img4)) || (!empty ($img5)) || (!empty ($img6)) || (!empty ($img7)) || (!empty ($img8)) || (!empty ($img9)) || (!empty ($img10)) || (!empty ($img11)) || (!empty ($img12)) ) {
 						?>
 						<div class="store-gallery">
@@ -274,16 +283,16 @@ get_header(); ?>
 								echo '</div></div>';
 							}
 						?>
-						
+
 					</div>
 				</article><!-- #post-## -->
-				
+
 				<?php
 					endwhile; // End of the loop.
 				?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
-		
+
 <?php
 get_footer();

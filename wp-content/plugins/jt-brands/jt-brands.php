@@ -31,7 +31,7 @@ function create_brands_list() {
                 'not_found_in_trash' => __('No Brands found in Trash', 'jt-brands'),
                 'parent' => __('Parent Brand', 'jt-brands')
             ),
- 
+
             'public' => true,
             'menu_position' => 25,
             'supports' => array( 'title', 'thumbnail' ),
@@ -89,6 +89,7 @@ function display_brand_meta_box( $brand ) {
     $store_phone = esc_html( get_post_meta( $brand->ID, 'store_phone', true ) );
     $store_fax = esc_html( get_post_meta( $brand->ID, 'store_fax', true ) );
     $store_email = esc_html( get_post_meta( $brand->ID, 'store_email', true ) );
+    $store_website = esc_html( get_post_meta( $brand->ID, 'store_website', true ) );
     $short_info = esc_html( get_post_meta( $brand->ID, 'short_info', true ) );
 	$info = 'store_info';
     $store_info = esc_html( get_post_meta( $brand->ID, 'store_info', true ) );
@@ -141,6 +142,10 @@ function display_brand_meta_box( $brand ) {
 				<tr>
 					<td style="width: 150px"><?php echo __('Email', 'jt-brands'); ?></td>
 					<td><input type="email" size="80" name="store_email" value="<?php echo $store_email; ?>" /></td>
+				</tr>
+        <tr>
+					<td style="width: 150px"><?php echo __('Website', 'jt-brands'); ?></td>
+					<td><input type="text" size="80" name="store_website" value="<?php echo $store_website; ?>" /></td>
 				</tr>
 				<tr>
 					<td style="width: 150px"><?php echo __('Short Info', 'jt-brands'); ?></td>
@@ -255,6 +260,9 @@ function add_brand_fields( $brand_id, $brand ) {
         if ( isset( $_POST['store_email'] ) && $_POST['store_email'] != '' ) {
             update_post_meta( $brand_id, 'store_email', $_POST['store_email'] );
         }
+        if ( isset( $_POST['store_website'] ) && $_POST['store_website'] != '' ) {
+            update_post_meta( $brand_id, 'store_website', $_POST['store_website'] );
+        }
         if ( isset( $_POST['short_info'] ) && $_POST['short_info'] != '' ) {
             update_post_meta( $brand_id, 'short_info', $_POST['short_info'] );
         }
@@ -313,32 +321,32 @@ function add_brand_fields( $brand_id, $brand ) {
 }
 
 
-// Creating the widget 
+// Creating the widget
 class jt_brands extends WP_Widget {
 
 	function __construct() {
 		parent::__construct(
 		// Base ID of your widget
-		'jt_brands', 
+		'jt_brands',
 
 		// Widget name will appear in UI
-		__('JT Brands', 'jt-brands'), 
+		__('JT Brands', 'jt-brands'),
 
 		// Widget description
-		array( 'description' => __( 'Showcase your store\'s brands in a modern and responsive way', 'jt-brands' ), ) 
+		array( 'description' => __( 'Showcase your store\'s brands in a modern and responsive way', 'jt-brands' ), )
 		);
 	}
 
 	// Creating widget front-end
 	// This is where the action happens
 	public function widget( $widget_args, $instance ) {
-		
+
         extract( $widget_args );
-	
+
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		$style = $instance['style'];
 		$display_filters = $instance['display_filters'];
-		
+
 		wp_register_script('uikit_js', plugins_url('/js/uikit.min.js',__FILE__ ));
 		wp_enqueue_script('uikit_js');
 		wp_register_script('uikit_grid_js', plugins_url('/js/grid.min.js',__FILE__ ));
@@ -352,24 +360,24 @@ class jt_brands extends WP_Widget {
 		wp_enqueue_style( 'tooltip.css' );
 		wp_register_script( 'tooltip.js', plugin_dir_url(__FILE__).'js/tooltip.min.js' );
 		wp_enqueue_script( 'tooltip.js' );
-		
+
 		wp_register_script('uikit_slideset_js', plugins_url('/js/slideset.min.js',__FILE__ ));
 		wp_enqueue_script('uikit_slideset_js');
 		wp_register_style( 'uikit_slidenav_css', plugin_dir_url(__FILE__).'css/slidenav.min.css' );
 		wp_enqueue_style( 'uikit_slidenav_css' );
-		
-		
-		
+
+
+
 		// before and after widget arguments are defined by themes
 		echo $widget_args['before_widget'];
 		if ( ! empty( $title ) ) {
 			echo $widget_args['before_title'];
-		
+
 			echo $title;
-		
+
 			echo $widget_args['after_title'];
 		}
-		
+
 		// Include style based on the widget's settings
 		if ($style == 'default') {
 			include( plugin_dir_path( __FILE__ ) . 'styles/default.php');
@@ -383,20 +391,20 @@ class jt_brands extends WP_Widget {
 		else if ($style == 'slideset') {
 			include( plugin_dir_path( __FILE__ ) . 'styles/slideset.php');
 		}
-		
+
 		echo $widget_args['after_widget'];
 	}
 
-	// Widget Backend 
+	// Widget Backend
 	public function form( $instance ) {
 		$title = isset( $instance['title'] ) ? esc_attr( $instance[ 'title' ] ) : ' ';
 		$style =  isset( $instance['style'] ) ? $instance[ 'style' ] : ' ';
 		$display_filters =  isset( $instance['display_filters'] ) ? $instance[ 'display_filters' ] : ' ';
-		
+
 		// Widget admin form
 	?>
 	<div class="wrap-jsquare">
-	
+
 		<div class="uk-accordion" data-uk-accordion>
 			<div class="jt-menu-widget">
 				<h3 class="uk-accordion-title"><i class="fa fa-gear"></i></h3>
@@ -404,11 +412,11 @@ class jt_brands extends WP_Widget {
 			<div class="uk-accordion-content">
 				<h4>Widget Settings</h4>
 				<p>
-					<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Widget Title:', 'jt-brands' ); ?></label> 
+					<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Widget Title:', 'jt-brands' ); ?></label>
 					<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 				</p>
 				<p>
-					<label for="<?php echo $this->get_field_id( 'style' ); ?>"><?php _e( 'Style:', 'jt-brands' ); ?></label> 
+					<label for="<?php echo $this->get_field_id( 'style' ); ?>"><?php _e( 'Style:', 'jt-brands' ); ?></label>
 					<select class="widefat" type="text" id="<?php echo $this->get_field_id( 'style' ); ?>" name="<?php echo $this->get_field_name( 'style' ); ?>">
 						<option value="default" <?php echo ($style == 'default')?'selected':''; ?>>Default</option>
 						<option value="list" <?php echo ($style == 'list')?'selected':''; ?>>List</option>
@@ -417,31 +425,31 @@ class jt_brands extends WP_Widget {
 					</select>
 				</p>
 				<p>
-					<label for="<?php echo $this->get_field_id( 'display_filters' ); ?>"><?php _e( 'Display Filters:', 'jt-brands' ); ?></label> 
+					<label for="<?php echo $this->get_field_id( 'display_filters' ); ?>"><?php _e( 'Display Filters:', 'jt-brands' ); ?></label>
 					<select class="widefat" type="text" id="<?php echo $this->get_field_id( 'display_filters' ); ?>" name="<?php echo $this->get_field_name( 'display_filters' ); ?>">
 						<option value="yes" <?php echo ($display_filters == 'yes')?'selected':''; ?>>Yes</option>
 						<option value="no" <?php echo ($display_filters == 'no')?'selected':''; ?>>No</option>
 					</select>
 				</p>
 			</div>
-			
+
 		</div>
 	</div>
-	<?php 
+	<?php
 	}
-	
-	
+
+
 	// Updating widget replacing old instances with new
 	public function update( $new_instance, $old_instance ) {
-		
+
 		$instance = $old_instance;
-    
+
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['style'] = $new_instance['style'];
 		$instance['display_filters'] = $new_instance['display_filters'];
 		$instance['orderby'] = $new_instance['orderby'];
 		$instance['order'] = $new_instance['order'];
-		
+
 		return $instance;
 	}
 
@@ -454,53 +462,53 @@ function jt_brands_widget() {
 add_action( 'widgets_init', 'jt_brands_widget' );
 
 function jt_brands_styles() {
-	
+
 	   wp_register_style('font-awesome', plugin_dir_url(__FILE__).'css/font-awesome.min.css');
 	   wp_enqueue_style('font-awesome');
-	
+
 	   wp_register_style('jt-brands-css', plugin_dir_url(__FILE__).'css/jt-brands.css');
 	   wp_enqueue_style('jt-brands-css');
-		
+
        wp_register_style( 'uikit.css', plugin_dir_url(__FILE__).'css/uikit.css' );
        wp_enqueue_style( 'uikit.css' );
-	
+
        wp_register_script( 'switcher.js', plugin_dir_url(__FILE__).'js/switcher.min.js' );
        wp_enqueue_script( 'switcher.js' );
-	
+
     if (wp_style_is( 'jsquare-widget.css', 'enqueued' )) {
     	return;
     } else {
        wp_register_style( 'jsquare-widget.css', plugin_dir_url(__FILE__).'css/jsquare-widget.css' );
        wp_enqueue_style( 'jsquare-widget.css' );
     }
-	
+
     if (wp_style_is( 'accordion.css', 'enqueued' )) {
     	return;
     } else {
        wp_register_script( 'accordion.css', plugin_dir_url(__FILE__).'css/accordion.min.css' );
        wp_enqueue_script( 'accordion.css' );
     }
-	
+
     if (wp_script_is( 'uikit.js', 'enqueued' )) {
     	return;
     } else {
        wp_register_script( 'uikit.js', plugin_dir_url(__FILE__).'js/uikit.min.js');
        wp_enqueue_script( 'uikit.js' );
     }
-	
+
     if (wp_script_is( 'accordion.js', 'enqueued' )) {
     	return;
     } else {
        wp_register_script( 'accordion.js', plugin_dir_url(__FILE__).'js/accordion.min.js' );
        wp_enqueue_script( 'accordion.js' );
     }
-	
+
 }
 add_action( 'widgets_init','jt_brands_styles');
 
 
 add_action('admin_enqueue_scripts', 'jt_brands_scripts');
- 
+
 function jt_brands_scripts() {
         wp_enqueue_media();
         wp_register_script('brands-scripts-js', plugin_dir_url(__FILE__) . '/js/brands-scripts.js', array('jquery'));

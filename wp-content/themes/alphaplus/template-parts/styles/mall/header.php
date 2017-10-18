@@ -1,5 +1,5 @@
 <?php
-	
+
 	include_once ABSPATH . 'wp-admin/includes/plugin.php';
 	if ( is_plugin_active( 'option-tree/ot-loader.php' ) ) {
 		$mall_header_widget_width = esc_attr(ot_get_option('mall-header-widget-width'));
@@ -28,19 +28,19 @@
 							<a href="<?php echo site_url(); ?>">
 								<?php
 									$site_logo = ot_get_option('site_logo');
-
-									if (!empty ($site_logo)) {
-										echo '<img src="' . esc_attr($site_logo) . '" alt="">';
-									}
-									else {
-										echo '<img src="'. get_template_directory_uri() . '/images/logos/mall-logo.png" alt="">';
-									}
+									echo '<img src="'. get_template_directory_uri() . '/images/logos/logo.png" alt="">';
+									// if (!empty ($site_logo)) {
+									// 	echo '<img src="' . esc_attr($site_logo) . '" alt="">';
+									// }
+									// else {
+									// 	echo '<img src="'. get_template_directory_uri() . '/images/logos/logo.png" alt="">';
+									// }
 								?>
 							</a>
 					</div><!-- .site-branding -->
 				</div>
 				<div id="social" class="<?php echo $mall_social_width; ?>">
-					<?php 
+					<?php
 						if (is_active_sidebar('social')) {
 							dynamic_sidebar('social');
 						}
@@ -48,13 +48,13 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<nav id="site-navigation" class="main-navigation">
 			<div class="container">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</div>
 		</nav><!-- #site-navigation -->
-		
+
 		<div id="mobile-menu" class="uk-offcanvas">
 			<div class="uk-offcanvas-bar">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu-mobile' ) ); ?>
